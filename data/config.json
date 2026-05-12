@@ -1,0 +1,20 @@
+{
+  "site": {
+    "title": "Vadim",
+    "themeColor": "#2B2B35",
+    "favicon": "./img/thumbnail.ico"
+  },
+  "profile": {
+    "name": "Vadim",
+    "role": "Front-end Developer<br>UI/UX Designer",
+    "avatar": "./img/face-1.jpg",
+    "bannerPhoto": "./img/face-2.png",
+    "available": true,
+    "residence": "Ukraine",
+    "city": "Kharkov"
+  },
+  "contact": {
+    "email": "example@mail.com",
+    "cvFile": "./files/cv.txt"
+  }
+}

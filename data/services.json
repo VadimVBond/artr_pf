@@ -1,0 +1,35 @@
+{
+  "title": "My Services",
+  "items": [
+    {
+      "title": "Web Development",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.",
+      "link": "contact.html",
+      "linkText": "Order now"
+    },
+    {
+      "title": "UI/UX Design",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.",
+      "link": "contact.html",
+      "linkText": "Order now"
+    },
+    {
+      "title": "Sound Design",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.",
+      "link": "contact.html",
+      "linkText": "Order now"
+    },
+    {
+      "title": "Game Design",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.",
+      "link": "contact.html",
+      "linkText": "Order now"
+    },
+    {
+      "title": "Advertising",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.",
+      "link": "contact.html",
+      "linkText": "Order now"
+    }
+  ]
+}

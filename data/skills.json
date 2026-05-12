@@ -1,0 +1,20 @@
+{
+  "languages": [
+    { "name": "French", "level": 75 },
+    { "name": "English", "level": 90 },
+    { "name": "Spanish", "level": 60 }
+  ],
+  "technical": [
+    { "name": "HTML", "level": 95 },
+    { "name": "CSS", "level": 90 },
+    { "name": "JavaScript", "level": 85 },
+    { "name": "PHP", "level": 70 },
+    { "name": "WordPress", "level": 75 }
+  ],
+  "knowledge": [
+    "Bootstrap, Materialize",
+    "Stylus, Sass, Less",
+    "Gulp, Webpack, Grunt",
+    "GIT knowledge"
+  ]
+}
