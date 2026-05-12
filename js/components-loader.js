@@ -155,7 +155,7 @@ class ComponentLoader {
 }
 
 // Auto-init on DOM ready
-document.addEventListener('DOMContentLoaded', () => {
-  const loader = new ComponentLoader();
-  loader.init();
-});
+// document.addEventListener('DOMContentLoaded', () => {
+//   const loader = new ComponentLoader();
+//   loader.init();
+// });

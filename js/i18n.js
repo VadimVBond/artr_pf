@@ -70,7 +70,7 @@ class I18n {
       document.title = title;
     }
 
-    console.log(`✓ Applied translations: ${Object.querySelectorAll('[data-i18n]').length} elements`);
+    console.log(`✓ Applied translations: ${document.querySelectorAll('[data-i18n]').length} elements`);
   }
 
   setLanguage(lang) {
