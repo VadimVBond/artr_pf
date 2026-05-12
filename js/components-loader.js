@@ -140,18 +140,21 @@ class ComponentLoader {
   }
 
   async init() {
-    const components = document.querySelectorAll('[data-component]');
-    this.totalComponents = components.length;
+  const components = [...document.querySelectorAll('[data-component]')];
 
-    if (this.totalComponents === 0) {
-      window.dispatchEvent(new Event('componentsReady'));
-      return;
-    }
+  this.totalComponents = components.length;
 
-    console.log(`Found ${this.totalComponents} components to render.`);
-
-    components.forEach(el => this.renderComponent(el));
+  if (this.totalComponents === 0) {
+    window.dispatchEvent(new Event('componentsReady'));
+    return;
   }
+
+  console.log(`Found ${this.totalComponents} components to render.`);
+
+  for (const el of components) {
+    await this.renderComponent(el);
+  }
+}
 }
 
 // Auto-init on DOM ready
