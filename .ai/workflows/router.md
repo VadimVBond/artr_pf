@@ -3,9 +3,10 @@
 Task routing and fallback logic:
 
 ## Primary Routing
-- **Analyze** -> GPT (Full project context)
-- **Large refactor** -> Claude (Safe and careful)
-- **Generate components** -> Qwen (Speed and boilerplate)
+- **Analyze** -> GPT (`prompts/analyze/full-project.gpt.md`)
+- **Large refactor** -> Claude (`prompts/refactor/safe-claude.md`)
+- **Generate components** -> Qwen (`prompts/generate/fast-qwen.md`)
+- **Localization** -> Any (`prompts/generate/translate-content.md`)
 
 ## Fallback Logic
 1. If **GPT Analysis** fails or is ambiguous:
