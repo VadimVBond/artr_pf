@@ -1,0 +1,6 @@
+{
+  "nuxt.isNuxtApp": false,
+  "python.defaultInterpreterPath": "C:\\dev_env\\venvs\\django_5_venv\\.venv\\Scripts\\python.exe",
+  "djlint.showInstallError": false,
+  "CodeGPT.apiKey": "OpenRouter"
+}

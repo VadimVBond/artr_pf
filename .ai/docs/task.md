@@ -1,0 +1,4 @@
+- [x] Разработка контента для MASTER PROMPT
+- [x] Создание файла `.ai/prompts/analyze/MASTER PROMPT (проверка + рефактор всей ai структуры).md`
+- [x] Синхронизация документации (implementation_plan, task) в директорию `.ai/`
+- [x] Финальная проверка и создание walkthrough.md
