@@ -1,37 +1,119 @@
 /**
  * Components Loader for Arter Portfolio
- * Loads HTML fragments into elements with data-component attribute
+ * Loads HTML fragments and renders them with data from /data/*.json
  */
-document.addEventListener("DOMContentLoaded", () => {
-    const components = document.querySelectorAll('[data-component]');
-    let loadedCount = 0;
 
-    if (components.length === 0) return;
+class ComponentLoader {
+  constructor() {
+    this.cache = new Map();
+    this.dataCache = new Map();
+    this.loadedCount = 0;
+    this.totalComponents = 0;
+  }
 
-    console.log(`Found ${components.length} components to load.`);
-    
-    components.forEach(async (el) => {
-        const componentName = el.getAttribute('data-component');
-        const componentPath = `components/${componentName}.html`;
-        console.log(`Loading component: ${componentName} from ${componentPath}`);
-        
-        try {
-            const response = await fetch(componentPath);
-            if (response.ok) {
-                const html = await response.text();
-                el.innerHTML = html;
-                console.log(`Successfully loaded: ${componentName}`);
-            } else {
-                console.error(`Component not found: ${componentName} (Status: ${response.status})`);
-            }
-        } catch (err) {
-            console.error(`Error loading component: ${componentName}`, err);
-        } finally {
-            loadedCount++;
-            if (loadedCount === components.length) {
-                console.log('All components loaded, dispatching componentsReady');
-                window.dispatchEvent(new Event('componentsReady'));
-            }
-        }
+  async loadData(dataName) {
+    if (this.dataCache.has(dataName)) {
+      return this.dataCache.get(dataName);
+    }
+
+    try {
+      const response = await fetch(`data/${dataName}.json`);
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const data = await response.json();
+      this.dataCache.set(dataName, data);
+      return data;
+    } catch (err) {
+      console.error(`Error loading data: ${dataName}`, err);
+      return null;
+    }
+  }
+
+  async loadTemplate(componentName) {
+    if (this.cache.has(componentName)) {
+      return this.cache.get(componentName);
+    }
+
+    try {
+      const response = await fetch(`templates/components/${componentName}.html`);
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const html = await response.text();
+      this.cache.set(componentName, html);
+      return html;
+    } catch (err) {
+      console.error(`Error loading template: ${componentName}`, err);
+      return null;
+    }
+  }
+
+  renderTemplate(template, data) {
+    return template.replace(/\{\{(\w+)\}\}/g, (_, key) => {
+      return data[key] !== undefined ? data[key] : `{{${key}}}`;
     });
+  }
+
+  async renderComponent(el) {
+    const componentName = el.getAttribute('data-component');
+    const dataName = el.getAttribute('data-source') || componentName;
+    const index = el.getAttribute('data-index');
+
+    console.log(`Loading component: ${componentName}`);
+
+    const template = await this.loadTemplate(componentName);
+    if (!template) {
+      this.loadedCount++;
+      this.checkComplete();
+      return;
+    }
+
+    const data = await this.loadData(dataName);
+    if (!data) {
+      el.innerHTML = `<!-- Error: data '${dataName}' not found -->`;
+      this.loadedCount++;
+      this.checkComplete();
+      return;
+    }
+
+    // Если указан индекс, рендерим конкретный элемент массива
+    if (index !== null && Array.isArray(data[Object.keys(data)[0]])) {
+      const arrayKey = Object.keys(data)[0];
+      const item = data[arrayKey][parseInt(index)];
+      if (item) {
+        el.innerHTML = this.renderTemplate(template, item);
+      }
+    } else {
+      // Иначе рендерим первый уровень данных
+      el.innerHTML = this.renderTemplate(template, data);
+    }
+
+    console.log(`✓ Rendered: ${componentName}`);
+    this.loadedCount++;
+    this.checkComplete();
+  }
+
+  checkComplete() {
+    if (this.loadedCount === this.totalComponents) {
+      console.log(`All ${this.totalComponents} components rendered.`);
+      window.dispatchEvent(new Event('componentsReady'));
+    }
+  }
+
+  async init() {
+    const components = document.querySelectorAll('[data-component]');
+    this.totalComponents = components.length;
+
+    if (this.totalComponents === 0) {
+      window.dispatchEvent(new Event('componentsReady'));
+      return;
+    }
+
+    console.log(`Found ${this.totalComponents} components to render.`);
+
+    components.forEach(el => this.renderComponent(el));
+  }
+}
+
+// Auto-init on DOM ready
+document.addEventListener('DOMContentLoaded', () => {
+  const loader = new ComponentLoader();
+  loader.init();
 });

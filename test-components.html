@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Test Components - Arter</title>
+  <link rel="stylesheet" href="./css/plugins/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/color-4.css">
+  <style>
+    .test-container { padding: 40px; max-width: 1200px; margin: 0 auto; }
+    .test-section { margin-bottom: 60px; }
+    .test-title { font-size: 24px; margin-bottom: 20px; color: #B068F0; }
+    .counters-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; }
+  </style>
+</head>
+<body>
+  <div class="test-container">
+    <h1>Component Testing Page</h1>
+    
+    <!-- Test 1: Counters from JSON -->
+    <div class="test-section">
+      <h2 class="test-title">1. Counters (data-driven)</h2>
+      <div class="counters-grid">
+        <div data-component="counter" data-source="counters" data-index="0"></div>
+        <div data-component="counter" data-source="counters" data-index="1"></div>
+        <div data-component="counter" data-source="counters" data-index="2"></div>
+        <div data-component="counter" data-source="counters" data-index="3"></div>
+      </div>
+    </div>
+
+    <!-- Test 2: Section Titles from JSON -->
+    <div class="test-section">
+      <h2 class="test-title">2. Section Titles (data-driven)</h2>
+      <div data-component="section-title" data-source="section-titles" data-key="services"></div>
+      <div style="height: 20px;"></div>
+      <div data-component="section-title" data-source="section-titles" data-key="pricing"></div>
+      <div style="height: 20px;"></div>
+      <div data-component="section-title" data-source="section-titles" data-key="testimonials"></div>
+    </div>
+
+    <!-- Test 3: i18n Test -->
+    <div class="test-section">
+      <h2 class="test-title">3. i18n (translations)</h2>
+      <p data-i18n="navigation.home">Home</p>
+      <p data-i18n="sidebar.downloadCv">Download CV</p>
+      <p data-i18n="common.exploreNow">Explore now</p>
+      <button onclick="window.i18n.setLanguage('ru')">Switch to Russian</button>
+      <button onclick="window.i18n.setLanguage('en')">Switch to English</button>
+    </div>
+
+    <!-- Test 4: Theme Switcher -->
+    <div class="test-section">
+      <h2 class="test-title">4. Theme Switcher</h2>
+      <button onclick="window.themeSwitcher.setTheme('color-1')">Theme 1</button>
+      <button onclick="window.themeSwitcher.setTheme('color-2')">Theme 2</button>
+      <button onclick="window.themeSwitcher.setTheme('color-3')">Theme 3</button>
+      <button onclick="window.themeSwitcher.setTheme('color-4')">Theme 4</button>
+      <p>Current theme: <span id="current-theme"></span></p>
+    </div>
+  </div>
+
+  <script>
+    // Update current theme display
+    setInterval(() => {
+      const el = document.getElementById('current-theme');
+      if (el && window.themeSwitcher) {
+        el.textContent = window.themeSwitcher.getTheme();
+      }
+    }, 1000);
+  </script>
+
+  <!-- Core scripts -->
+  <script src="./js/plugins/jquery.min.js"></script>
+  
+  <!-- Component-based architecture modules -->
+  <script src="./js/utils.js"></script>
+  <script src="./js/theme.js"></script>
+  <script src="./js/i18n.js"></script>
+  <script src="./js/components-loader.js"></script>
+  <script src="./js/render.js"></script>
+</body>
+</html>

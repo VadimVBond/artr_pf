@@ -1,0 +1,8 @@
+{
+  "services": { "title": "My Services" },
+  "pricing": { "title": "Pricing" },
+  "testimonials": { "title": "Testimonials" },
+  "brands": { "title": "Brands" },
+  "skills": { "title": "My Skills" },
+  "languages": { "title": "Languages" }
+}
