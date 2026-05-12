@@ -87,19 +87,47 @@ class ComponentLoader {
       return;
     }
 
-    // Если указан индекс, рендерим конкретный элемент массива
-    if (index !== null && Array.isArray(data[Object.keys(data)[0]])) {
-      const arrayKey = Object.keys(data)[0];
-      const item = data[arrayKey][parseInt(index)];
-      if (item) {
-        el.innerHTML = this.renderTemplate(template, item);
+    // Определяем массив данных для рендеринга
+    let itemsArray = null;
+    
+    // Сначала пробуем найти массив по ключу, совпадающему с именем компонента или data-source
+    // Например, для counters.json ищем data.counters, для services.json ищем data.services или data.items
+    const possibleKeys = [dataName, 'items', 'data'];
+    
+    for (const key of possibleKeys) {
+      if (data[key] && Array.isArray(data[key])) {
+        itemsArray = data[key];
+        break;
       }
-    } else {
-      // Иначе рендерим первый уровень данных
-      el.innerHTML = this.renderTemplate(template, data);
+    }
+    
+    // Если не нашли, пробуем первый ключ в объекте
+    if (!itemsArray) {
+      const firstKey = Object.keys(data)[0];
+      if (firstKey && Array.isArray(data[firstKey])) {
+        itemsArray = data[firstKey];
+      }
     }
 
-    console.log(`✓ Rendered: ${componentName}`);
+    // Если указан индекс, рендерим конкретный элемент массива
+    if (index !== null && itemsArray) {
+      const item = itemsArray[parseInt(index)];
+      if (item) {
+        el.innerHTML = this.renderTemplate(template, item);
+        console.log(`✓ Rendered: ${componentName} (index ${index})`);
+      } else {
+        console.warn(`Item at index ${index} not found in ${dataName}`);
+      }
+    } else if (itemsArray && itemsArray.length > 0) {
+      // Если нет индекса, но есть массив - рендерим первый элемент
+      el.innerHTML = this.renderTemplate(template, itemsArray[0]);
+      console.log(`✓ Rendered: ${componentName} (first item)`);
+    } else {
+      // Иначе рендерим данные как объект
+      el.innerHTML = this.renderTemplate(template, data);
+      console.log(`✓ Rendered: ${componentName} (object)`);
+    }
+
     this.loadedCount++;
     this.checkComplete();
   }
