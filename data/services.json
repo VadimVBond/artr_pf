@@ -2,30 +2,35 @@
   "title": "My Services",
   "items": [
     {
+      "icon": "fas fa-code",
       "title": "Web Development",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.",
       "link": "contact.html",
       "linkText": "Order now"
     },
     {
+      "icon": "fas fa-paint-brush",
       "title": "UI/UX Design",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.",
       "link": "contact.html",
       "linkText": "Order now"
     },
     {
+      "icon": "fas fa-music",
       "title": "Sound Design",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.",
       "link": "contact.html",
       "linkText": "Order now"
     },
     {
+      "icon": "fas fa-gamepad",
       "title": "Game Design",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.",
       "link": "contact.html",
       "linkText": "Order now"
     },
     {
+      "icon": "fas fa-bullhorn",
       "title": "Advertising",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.",
       "link": "contact.html",

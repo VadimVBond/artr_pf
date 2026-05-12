@@ -33,16 +33,30 @@ class ComponentLoader {
       return this.cache.get(componentName);
     }
 
-    try {
-      const response = await fetch(`templates/components/${componentName}.html`);
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      const html = await response.text();
-      this.cache.set(componentName, html);
-      return html;
-    } catch (err) {
-      console.error(`Error loading template: ${componentName}`, err);
-      return null;
+    // Try multiple paths for different component types
+    const paths = [
+      `templates/components/${componentName}.html`,
+      `templates/cards/${componentName}.html`,
+      `templates/sections/${componentName}.html`,
+      `templates/layout/${componentName}.html`
+    ];
+
+    for (const path of paths) {
+      try {
+        const response = await fetch(path);
+        if (response.ok) {
+          const html = await response.text();
+          this.cache.set(componentName, html);
+          console.log(`Loaded template from: ${path}`);
+          return html;
+        }
+      } catch (err) {
+        // Try next path
+      }
     }
+
+    console.error(`Error loading template: ${componentName} (tried ${paths.join(', ')})`);
+    return null;
   }
 
   renderTemplate(template, data) {

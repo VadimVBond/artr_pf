@@ -1,0 +1,20 @@
+<!-- Portfolio Card Component -->
+<!-- Usage: <div data-component="portfolio-card" data-source="projects" data-index="0"></div> -->
+<div class="art-portfolio-item col-lg-4 col-md-6">
+  <div class="art-portfoio-icon-box">
+    <!-- image -->
+    <div class="art-portfolio-icon-box-img">
+      <img src="{{thumbnail}}" alt="{{title}}" loading="lazy">
+    </div>
+    <!-- description -->
+    <div class="art-portfolio-icon-box-desc">
+      <div class="art-portfolio-icon-box-title">
+        <h5>{{title}}</h5>
+      </div>
+      <div class="art-portfolio-icon-box-text">{{description}}</div>
+      <a href="{{link}}">
+        <div class="art-link art-w-chevron">Explore now</div>
+      </a>
+    </div>
+  </div>
+</div>
