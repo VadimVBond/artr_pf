@@ -1,0 +1,40 @@
+{
+  "title": "Pricing",
+  "items": [
+    {
+      "title": "Basic",
+      "price": "$40",
+      "desc": "For simple projects",
+      "features": [
+        "HTML/CSS",
+        "Responsive",
+        "1 Revision"
+      ],
+      "popular": false
+    },
+    {
+      "title": "Standard",
+      "price": "$90",
+      "desc": "Most popular choice",
+      "features": [
+        "JS Integration",
+        "SEO Optimized",
+        "3 Revisions",
+        "Support"
+      ],
+      "popular": true
+    },
+    {
+      "title": "Premium",
+      "price": "$190",
+      "desc": "Complex solutions",
+      "features": [
+        "Full Stack",
+        "Admin Panel",
+        "Unlimited Revisions",
+        "24/7 Support"
+      ],
+      "popular": false
+    }
+  ]
+}

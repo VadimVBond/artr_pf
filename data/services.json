@@ -4,37 +4,32 @@
     {
       "icon": "fas fa-code",
       "title": "Web Development",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.",
-      "link": "contact.html",
-      "linkText": "Order now"
+      "desc": "High quality code and modern standards.",
+      "link": "contact.html"
     },
     {
       "icon": "fas fa-paint-brush",
       "title": "UI/UX Design",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.",
-      "link": "contact.html",
-      "linkText": "Order now"
+      "desc": "Modern and user-friendly interfaces.",
+      "link": "contact.html"
     },
     {
       "icon": "fas fa-music",
       "title": "Sound Design",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.",
-      "link": "contact.html",
-      "linkText": "Order now"
+      "desc": "Quality sound design for your projects.",
+      "link": "contact.html"
     },
     {
       "icon": "fas fa-gamepad",
       "title": "Game Design",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.",
-      "link": "contact.html",
-      "linkText": "Order now"
+      "desc": "Development of unique game concepts.",
+      "link": "contact.html"
     },
     {
       "icon": "fas fa-bullhorn",
       "title": "Advertising",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.",
-      "link": "contact.html",
-      "linkText": "Order now"
+      "desc": "Promotion of your products online.",
+      "link": "contact.html"
     }
   ]
 }

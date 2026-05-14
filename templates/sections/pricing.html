@@ -1,0 +1,28 @@
+<section class="art-section art-gray-bg">
+  <div class="container">
+    <div class="art-section-title">
+      <div class="art-title-frame">
+        <h4>{{title}}</h4>
+      </div>
+    </div>
+    <div class="row">
+      {{#each items}}
+      <div class="col-lg-4 col-md-6">
+        <div class="art-a art-price-card {{#if popular}}art-popular{{/if}}">
+          <h5 class="mb-15">{{title}}</h5>
+          <div class="art-price">{{price}}</div>
+          <div class="mb-15">{{desc}}</div>
+          <ul class="art-price-list">
+            {{#each features}}
+            <li>{{this}}</li>
+            {{/each}}
+          </ul>
+          <a href="contact.html" class="art-btn art-btn-md">
+            <span>Order now</span>
+          </a>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</section>

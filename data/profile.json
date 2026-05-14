@@ -1,0 +1,30 @@
+{
+  "name": "Vadim",
+  "role": "Front-end Developer<br>UI/UX Designer",
+  "avatar": "img/face-1.jpg",
+  "bannerPhoto": "img/face-2.png",
+  "available": true,
+  "contacts": {
+    "residence": "Ukraine",
+    "city": "Kharkov",
+    "email": "example@mail.com"
+  },
+  "socials": [
+    {
+      "icon": "fab fa-facebook",
+      "url": "#"
+    },
+    {
+      "icon": "fab fa-twitter",
+      "url": "#"
+    },
+    {
+      "icon": "fab fa-instagram",
+      "url": "#"
+    },
+    {
+      "icon": "fab fa-dribbble",
+      "url": "#"
+    }
+  ]
+}

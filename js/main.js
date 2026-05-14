@@ -229,50 +229,69 @@ $(function() {
   }
 
   // Preloader
-  $(document).ready(function() {
-    // Initialize theme
-    if (modules.theme) modules.theme.init();
+$(document).ready(function() {
+  console.log('DOM Ready. Initializing modules...');
 
-    // Initialize i18n
-    if (modules.i18n) modules.i18n.init();
+  // 1. Initialize Theme & i18n immediately
+  if (window.themeSwitcher) window.themeSwitcher.init();
+  if (window.i18n) window.i18n.init();
 
-    // Initialize component loader
-    modules.loader = new ComponentLoader();
-    modules.listRenderer = new ListRenderer(modules.loader);
-    modules.loader.init();
+  // 2. Initialize Component Loader
+  const loader = new ComponentLoader();
+  window.componentLoader = loader; // Make global for debugging
+  loader.init();
 
-    // Animate preloader
-    if (typeof anime !== 'undefined') {
-      anime({
-        targets: '.art-preloader .art-preloader-content',
-        opacity: [0, 1],
-        delay: 200,
-        duration: 600,
-        easing: 'linear'
-      });
+  // 3. Animate Preloader (Visuals)
+  if (typeof anime !== 'undefined') {
+    anime({
+      targets: '.art-preloader .art-preloader-content',
+      opacity: [0, 1],
+      delay: 200,
+      duration: 600,
+      easing: 'linear'
+    });
+    
+    // Hide preloader after a fixed time or when components are ready
+    setTimeout(() => {
       anime({
         targets: '.art-preloader',
         opacity: [1, 0],
-        delay: 2200,
         duration: 400,
         easing: 'linear',
         complete: () => $('.art-preloader').css('display', 'none')
       });
-    }
+    }, 1500);
+  }
 
-    if (document.getElementById('preloader') && typeof ProgressBar !== 'undefined') {
-      var preBar = new ProgressBar.Line('#preloader', {
-        strokeWidth: 1.7,
-        easing: 'easeInOut',
-        duration: 1400,
-        delay: 750,
-        trailWidth: 1.7,
-        svgStyle: { width: '100%', height: '100%' },
-        step: (state, bar) => bar.setText(Math.round(bar.value() * 100) + ' %')
-      });
-      preBar.animate(1);
-    }
-  });
+  // Progress bar for preloader (if exists)
+  if (document.getElementById('preloader') && typeof ProgressBar !== 'undefined') {
+    var preBar = new ProgressBar.Line('#preloader', {
+      strokeWidth: 1.7,
+      easing: 'easeInOut',
+      duration: 1400,
+      delay: 750,
+      trailWidth: 1.7,
+      svgStyle: { width: '100%', height: '100%' },
+      step: (state, bar) => bar.setText(Math.round(bar.value() * 100) + ' %')
+    });
+    preBar.animate(1);
+  }
+});
+
+// 4. MAIN INITIALIZATION TRIGGER
+// This function waits for the custom event fired by ComponentLoader
+function waitForComponents(callback) {
+  // Check if components are already rendered (edge case)
+  if (document.querySelectorAll('[data-component]').length === 0) {
+    callback();
+    return;
+  }
+
+  window.addEventListener('componentsReady', () => {
+    console.log('✅ All components rendered. Starting Arter engine...');
+    callback();
+  }, { once: true });
+}
 
   // Wait for components then init
   waitForComponents(initArter);
