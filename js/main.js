@@ -32,23 +32,30 @@ $(function() {
     console.log('Initializing Arter...');
 
     // scrollbar
-    if (typeof Scrollbar !== 'undefined') {
-      Scrollbar.use(OverscrollPlugin);
-      if (document.querySelector('#scrollbar')) {
-        Scrollbar.init(document.querySelector('#scrollbar'), {
-          damping: 0.05,
-          renderByPixel: true,
-          continuousScrolling: true,
-        });
-      }
-      if (document.querySelector('#scrollbar2')) {
-        Scrollbar.init(document.querySelector('#scrollbar2'), {
-          damping: 0.05,
-          renderByPixel: true,
-          continuousScrolling: true,
-        });
-      }
-    }
+if (typeof Scrollbar !== 'undefined') {
+  // Проверяем, загрузился ли плагин
+  if (typeof OverscrollPlugin !== 'undefined') {
+    Scrollbar.use(OverscrollPlugin);
+  } else {
+    console.warn('⚠️ OverscrollPlugin not found, skipping.');
+  }
+
+  // Инициализация скроллбара
+  if (document.querySelector('#scrollbar')) {
+    Scrollbar.init(document.querySelector('#scrollbar'), {
+      damping: 0.05,
+      renderByPixel: true,
+      continuousScrolling: true,
+    });
+  }
+  if (document.querySelector('#scrollbar2')) {
+    Scrollbar.init(document.querySelector('#scrollbar2'), {
+      damping: 0.05,
+      renderByPixel: true,
+      continuousScrolling: true,
+    });
+  }
+}
 
     // counters animation
     if ($('.art-counter-frame').length) {
