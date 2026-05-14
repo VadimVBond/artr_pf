@@ -1,0 +1,8 @@
+{
+  "counters": [
+    { "value": 10, "suffix": "+", "label": "Years Experience" },
+    { "value": 143, "suffix": "", "label": "Completed Projects" },
+    { "value": 114, "suffix": "", "label": "Happy Customers" },
+    { "value": 20, "suffix": "+", "label": "Honors and Awards" }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "projects": [
+    {
+      "title": "Project title",
+      "description": "Sit amet, consectetur adipisicing elit.",
+      "thumbnail": "./img/works/thumbnail/1.jpg",
+      "link": "portfolio-single.html"
+    },
+    {
+      "title": "Project title",
+      "description": "Sit amet, consectetur adipisicing elit.",
+      "thumbnail": "./img/works/thumbnail/2.jpg",
+      "link": "portfolio-single.html"
+    },
+    {
+      "title": "Project title",
+      "description": "Sit amet, consectetur adipisicing elit.",
+      "thumbnail": "./img/works/thumbnail/3.jpg",
+      "link": "portfolio-single.html"
+    },
+    {
+      "title": "Project title",
+      "description": "Sit amet, consectetur adipisicing elit.",
+      "thumbnail": "./img/works/thumbnail/4.jpg",
+      "link": "portfolio-single.html"
+    },
+    {
+      "title": "Project title",
+      "description": "Sit amet, consectetur adipisicing elit.",
+      "thumbnail": "./img/works/thumbnail/5.jpg",
+      "link": "portfolio-single.html"
+    },
+    {
+      "title": "Project title",
+      "description": "Sit amet, consectetur adipisicing elit.",
+      "thumbnail": "./img/works/thumbnail/6.jpg",
+      "link": "portfolio-single.html"
+    }
+  ]
+}

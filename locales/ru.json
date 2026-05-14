@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "Вадим"
+  },
+  "navigation": {
+    "home": "Главная",
+    "portfolio": "Портфолио",
+    "history": "История",
+    "contact": "Контакты",
+    "blog": "Блог",
+    "onepage": "Одна страница"
+  },
+  "sidebar": {
+    "residence": "Место жительства",
+    "city": "Город",
+    "downloadCv": "Скачать резюме"
+  },
+  "sections": {
+    "services": "Мои услуги",
+    "pricing": "Цены",
+    "testimonials": "Отзывы",
+    "brands": "Бренды",
+    "skills": "Мои навыки",
+    "languages": "Языки"
+  },
+  "common": {
+    "exploreNow": "Узнать больше",
+    "orderNow": "Заказать",
+    "readMore": "Читать далее",
+    "yearsExperience": "Лет опыта",
+    "completedProjects": "Выполненных проектов",
+    "happyCustomers": "Довольных клиентов",
+    "awards": "Наград"
+  },
+  "footer": {
+    "copyright": "© {year} {name}"
+  }
+}

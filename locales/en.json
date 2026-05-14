@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "Vadim"
+  },
+  "navigation": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "history": "History",
+    "contact": "Contact",
+    "blog": "Blog",
+    "onepage": "Onepage"
+  },
+  "sidebar": {
+    "residence": "Residence",
+    "city": "City",
+    "downloadCv": "Download CV"
+  },
+  "sections": {
+    "services": "My Services",
+    "pricing": "Pricing",
+    "testimonials": "Testimonials",
+    "brands": "Brands",
+    "skills": "My Skills",
+    "languages": "Languages"
+  },
+  "common": {
+    "exploreNow": "Explore now",
+    "orderNow": "Order now",
+    "readMore": "Read more",
+    "yearsExperience": "Years Experience",
+    "completedProjects": "Completed Projects",
+    "happyCustomers": "Happy Customers",
+    "awards": "Honors and Awards"
+  },
+  "footer": {
+    "copyright": "© {year} {name}"
+  }
+}

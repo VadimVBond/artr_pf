@@ -1,0 +1,36 @@
+{
+  "logo": "Vadim",
+  "items": [
+    {
+      "label": "Home",
+      "url": "index.html",
+      "active": true
+    },
+    {
+      "label": "Portfolio",
+      "url": "#",
+      "submenu": [
+        {
+          "label": "2 Column",
+          "url": "portfolio-2-col.html"
+        },
+        {
+          "label": "3 Column",
+          "url": "portfolio-3-col.html"
+        }
+      ]
+    },
+    {
+      "label": "History",
+      "url": "history.html"
+    },
+    {
+      "label": "Contact",
+      "url": "contact.html"
+    },
+    {
+      "label": "Blog",
+      "url": "blog-list.html"
+    }
+  ]
+}

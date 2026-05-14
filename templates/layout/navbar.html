@@ -1,0 +1,22 @@
+<div class="art-menu-bar">
+  <div class="art-menu-bar-frame">
+    <div class="art-menu-bar-header">
+      <h5 class="art-name mb-10"><a href="index.html">{{logo}}</a></h5>
+      <div class="art-menu-bar-btn art-disabled"></div>
+    </div>
+    <ul class="art-main-menu">
+      {{#each items}}
+      <li class="{{#if active}}art-current-menu-item{{/if}} {{#if submenu}}menu-item-has-children{{/if}}">
+        <a href="{{url}}">{{label}}</a>
+        {{#if submenu}}
+        <ul class="sub-menu">
+          {{#each submenu}}
+          <li><a href="{{url}}">{{label}}</a></li>
+          {{/each}}
+        </ul>
+        {{/if}}
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+</div>

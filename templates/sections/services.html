@@ -1,0 +1,27 @@
+<section class="art-section">
+  <div class="container">
+    <div class="art-section-title">
+      <div class="art-title-frame">
+        <h4>{{title}}</h4>
+      </div>
+    </div>
+    <div class="row">
+      {{#each items}}
+      <div class="col-lg-4 col-md-6">
+        <div class="art-a art-service-icon-box">
+          <div class="art-service-ib-content">
+            <div class="art-service-ib-icon">
+              <i class="{{icon}}"></i>
+            </div>
+            <h5 class="mb-15">{{title}}</h5>
+            <div class="mb-15">{{desc}}</div>
+            <div class="art-buttons-frame">
+              <a href="{{link}}" class="art-link art-color-link art-w-chevron">Order now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</section>

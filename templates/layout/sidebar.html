@@ -1,0 +1,30 @@
+<div class="art-info-bar">
+  <div class="art-info-bar-scroll" id="scrollbar2">
+    <div class="art-info-bar-frame">
+      <div class="art-info-bar-header">
+        <img class="art-avatar" src="{{avatar}}" alt="avatar">
+        <div class="art-avatar-status {{#if available}}art-available{{/if}}"></div>
+      </div>
+      <div class="art-info-bar-content">
+        <h5 class="art-name mb-10"><a href="index.html">{{name}}</a></h5>
+        <div class="art-sm-text">{{role}}</div>
+        <div class="art-line"></div>
+        <ul class="art-details-frame">
+          <li><h6>Residence:</h6><span>{{contacts.residence}}</span></li>
+          <li><h6>City:</h6><span>{{contacts.city}}</span></li>
+        </ul>
+        <div class="art-buttons-frame">
+          <a href="files/cv.txt" class="art-btn art-btn-md" download>
+            <span>Download CV</span>
+          </a>
+        </div>
+        <div class="art-line"></div>
+        <div class="art-social-frame">
+          {{#each socials}}
+          <a href="{{url}}" target="_blank"><i class="{{icon}}"></i></a>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
