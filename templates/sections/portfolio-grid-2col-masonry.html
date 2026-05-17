@@ -1,0 +1,35 @@
+<div class="container-fluid">
+  <div class="row p-30-0">
+
+    <div class="col-lg-12">
+      <!-- filter -->
+      <div class="art-filter mb-30">
+        {{#each filters}}
+        <a href="#" data-filter="{{filter}}" class="{{cssClass}}">{{label}}</a>
+        {{/each}}
+      </div>
+      <!-- filter end -->
+    </div>
+
+    <div class="art-grid art-grid-2-col art-gallery">
+      {{#each projects}}
+      <!-- grid item -->
+      <div class="art-grid-item {{category}}">
+        <!-- grid item frame -->
+        <a data-fancybox="gallery" href="{{original}}" class="art-a art-portfolio-item-frame {{orientation}}">
+          <img src="{{thumbnail}}" alt="{{title}}" loading="lazy">
+          <span class="art-item-hover"><i class="fas fa-expand"></i></span>
+        </a>
+        <!-- description -->
+        <div class="art-item-description">
+          <h5 class="mb-15">{{title}}</h5>
+          <div class="mb-15">{{description}}</div>
+          <a href="{{link}}" class="art-link art-color-link art-w-chevron" data-i18n="portfolio.readMore">Read more</a>
+        </div>
+      </div>
+      <!-- grid item end -->
+      {{/each}}
+    </div>
+
+  </div>
+</div>

@@ -20,7 +20,7 @@
       "title": "Project title",
       "description": "Sit amet, consectetur adipisicing elit. Quas, architecto.",
       "category": "logos",
-      "orientation": "art-horizontal",
+      "orientation": "art-vertical",
       "thumbnail": "img/works/thumbnail/2.jpg",
       "original": "img/works/original-size/2.jpg",
       "link": "portfolio-single.html"
@@ -38,7 +38,7 @@
       "title": "Project title",
       "description": "Sit amet, consectetur adipisicing elit. Quas, architecto.",
       "category": "ui",
-      "orientation": "art-horizontal",
+      "orientation": "art-square",
       "thumbnail": "img/works/thumbnail/4.jpg",
       "original": "img/works/original-size/4.jpg",
       "link": "portfolio-single.html"
@@ -47,7 +47,7 @@
       "title": "Project title",
       "description": "Sit amet, consectetur adipisicing elit. Quas, architecto.",
       "category": "webTemplates",
-      "orientation": "art-horizontal",
+      "orientation": "art-square",
       "thumbnail": "img/works/thumbnail/5.jpg",
       "original": "img/works/original-size/5.jpg",
       "link": "portfolio-single.html"
@@ -56,7 +56,7 @@
       "title": "Project title",
       "description": "Sit amet, consectetur adipisicing elit. Quas, architecto.",
       "category": "logos",
-      "orientation": "art-horizontal",
+      "orientation": "art-vertical",
       "thumbnail": "img/works/thumbnail/6.jpg",
       "original": "img/works/original-size/6.jpg",
       "link": "portfolio-single.html"
@@ -77,6 +77,33 @@
       "orientation": "art-horizontal",
       "thumbnail": "img/works/thumbnail/8.jpg",
       "original": "img/works/original-size/8.jpg",
+      "link": "portfolio-single.html"
+    },
+    {
+      "title": "Project title",
+      "description": "Sit amet, consectetur adipisicing elit. Quas, architecto.",
+      "category": "webTemplates",
+      "orientation": "art-horizontal",
+      "thumbnail": "img/works/thumbnail/9.jpg",
+      "original": "img/works/original-size/9.jpg",
+      "link": "portfolio-single.html"
+    },
+    {
+      "title": "Project title",
+      "description": "Sit amet, consectetur adipisicing elit. Quas, architecto.",
+      "category": "logos",
+      "orientation": "art-horizontal",
+      "thumbnail": "img/works/thumbnail/10.jpg",
+      "original": "img/works/original-size/10.jpg",
+      "link": "portfolio-single.html"
+    },
+    {
+      "title": "Project title",
+      "description": "Sit amet, consectetur adipisicing elit. Quas, architecto.",
+      "category": "drawings",
+      "orientation": "art-horizontal",
+      "thumbnail": "img/works/thumbnail/11.jpg",
+      "original": "img/works/original-size/11.jpg",
       "link": "portfolio-single.html"
     }
   ]
