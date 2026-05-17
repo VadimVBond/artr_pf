@@ -47,6 +47,5 @@ migrations/*.tmp
 
 # Build artifacts
 *.log
-
-# Ignore the current directory itself if needed
 .ai/
+# Ignore the current directory itself if needed
