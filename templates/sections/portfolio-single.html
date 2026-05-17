@@ -1,0 +1,176 @@
+<!-- Project Hero Slider -->
+<div class="container-fluid">
+  <div class="row p-30-0">
+
+    <div class="col-lg-12">
+      <div class="art-section-title">
+        <div class="art-title-frame">
+          <h4>{{title}}</h4>
+        </div>
+        <div class="art-right-frame">
+          <div class="art-project-category">{{category}}</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-12">
+      <div class="swiper-container art-works-slider" style="overflow: visible">
+        <div class="swiper-wrapper">
+          {{#each slides}}
+          <div class="swiper-slide">
+            <a data-fancybox="gallery" href="{{original}}" class="art-a art-portfolio-item-frame {{orientation}}">
+              <img src="{{thumbnail}}" alt="slide" loading="lazy">
+              <span class="art-item-hover"><i class="fas fa-expand"></i></span>
+            </a>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-12">
+      <div class="art-slider-navigation">
+        <div class="art-sn-left">
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="art-sn-right">
+          <div class="art-slider-nav-frame">
+            <div class="art-slider-nav art-works-swiper-prev"><i class="fas fa-chevron-left"></i></div>
+            <div class="art-slider-nav art-works-swiper-next"><i class="fas fa-chevron-right"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Project Details -->
+<div class="container-fluid">
+  <div class="row p-30-0">
+
+    <div class="col-lg-12">
+      <div class="art-section-title">
+        <div class="art-title-frame">
+          <h4 data-i18n="portfolio.details">Project details</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-8">
+      <div class="art-a art-card art-fluid-card">
+        <h5 class="mb-15" data-i18n="portfolio.description">Description</h5>
+        <div class="mb-15">{{description}}</div>
+        <div class="art-buttons-frame">
+          <a href="{{externalLink}}" class="art-link art-color-link art-w-chevron" target="_blank" data-i18n="portfolio.readMore">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <div class="art-a art-card">
+        <div class="art-table p-15-15">
+          <ul>
+            {{#each details}}
+            <li>
+              <h6>{{label}}</h6>
+              {{#if href}}
+              <span><a href="{{href}}" target="_blank">{{value}}</a></span>
+              {{/if}}
+              {{#if value}}
+              <span>{{value}}</span>
+              {{/if}}
+            </li>
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Testimonials -->
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="col-lg-12">
+      <div class="art-section-title">
+        <div class="art-title-frame">
+          <h4 data-i18n="portfolio.clientReviews">Client reviews</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-12">
+      <div class="swiper-container art-testimonial-slider" style="overflow: visible">
+        <div class="swiper-wrapper">
+          {{#each testimonials}}
+          <div class="swiper-slide">
+            <div class="art-a art-testimonial">
+              <div class="testimonial-body">
+                <img class="art-testimonial-face" src="{{photo}}" alt="{{name}}" loading="lazy">
+                <h5>{{name}}</h5>
+                <div class="art-el-suptitle mb-15">{{role}}</div>
+                <div class="mb-15">{{text}}</div>
+              </div>
+              <div class="art-testimonial-footer">
+                <div class="art-left-side">
+                  <ul class="art-star-rate">
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                  </ul>
+                </div>
+                <div class="art-right-side"></div>
+              </div>
+            </div>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-12">
+      <div class="art-slider-navigation">
+        <div class="art-sn-left">
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="art-sn-right">
+          <div class="art-slider-nav-frame">
+            <div class="art-slider-nav art-testi-swiper-prev"><i class="fas fa-chevron-left"></i></div>
+            <div class="art-slider-nav art-testi-swiper-next"><i class="fas fa-chevron-right"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- CTA Banner + Pagination -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="art-a art-banner" style="background-image: url({{cta.bg}})">
+        <div class="art-banner-overlay">
+          <div class="art-banner-title text-center">
+            <h1 class="mb-15">{{cta.title}}</h1>
+            <div class="art-lg-text art-code mb-25">{{cta.subtitle}}</div>
+            <a href="{{cta.buttonLink}}" class="art-btn art-btn-md"><span>{{cta.buttonText}}</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="art-a art-pagination">
+        <a href="{{pagination.prevLink}}" class="art-link art-color-link art-w-chevron art-left-link"><span data-i18n="portfolio.prevProject">Previous project</span></a>
+        <div class="art-pagination-center art-m-hidden">
+          <a class="art-link" href="{{pagination.allLink}}" data-i18n="portfolio.allProjects">All projects</a>
+        </div>
+        <a href="{{pagination.nextLink}}" class="art-link art-color-link art-w-chevron"><span data-i18n="portfolio.nextProject">Next project</span></a>
+      </div>
+    </div>
+  </div>
+</div>

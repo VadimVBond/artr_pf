@@ -1,0 +1,61 @@
+{
+  "title": "Project title",
+  "category": "Ui Design, Graphic",
+  "description": "Perferendis modi tempora, minus facere! Animi ipsam explicabo beatae soluta qui repellat minus perspiciatis placeat doloribus praesentium laborum debitis error sed ex nisi, ipsum ad obcaecati assumenda ut recusandae. Vero, voluptate, magni unde accusantium vel ducimus expedita!",
+  "externalLink": "https://www.behance.net/gallery/83236527/VIE",
+  "details": [
+    { "label": "Order Date:", "value": "24.12.2019" },
+    { "label": "Final Date:", "value": "12.03.2020" },
+    { "label": "Status:", "value": "Completed" },
+    { "label": "Client:", "value": "Envato Market" },
+    { "label": "Location:", "value": "Ukraine, Lviv", "href": "https://goo.gl/maps/b4w13Zuk9iWCsLMX7" }
+  ],
+  "slides": [
+    { "thumbnail": "img/works/thumbnail/1.jpg", "original": "img/works/original-size/1.jpg", "orientation": "art-horizontal" },
+    { "thumbnail": "img/works/thumbnail/7.jpg", "original": "img/works/original-size/7.jpg", "orientation": "art-horizontal" },
+    { "thumbnail": "img/works/thumbnail/4.jpg", "original": "img/works/original-size/4.jpg", "orientation": "art-horizontal" },
+    { "thumbnail": "img/works/thumbnail/5.jpg", "original": "img/works/original-size/5.jpg", "orientation": "art-horizontal" }
+  ],
+  "testimonials": [
+    {
+      "name": "Paul Trueman",
+      "role": "Template author",
+      "photo": "img/testimonials/face-1.jpg",
+      "text": "Working with Artur has been a pleasure. Better yet - I alerted them of a minor issue before going to sleep. The issue was fixed the next morning. I couldn't ask for better support. Thank you Artur! This is easily a 5 star freelancer.",
+      "stars": 5
+    },
+    {
+      "name": "Paul Trueman",
+      "role": "Template author",
+      "photo": "img/testimonials/face-2.jpg",
+      "text": "Working with Artur has been a pleasure. Better yet - I alerted them of a minor issue before going to sleep. The issue was fixed the next morning. I couldn't ask for better support. Thank you Artur! This is easily a 5 star freelancer.",
+      "stars": 4
+    },
+    {
+      "name": "Paul Trueman",
+      "role": "Template author",
+      "photo": "img/testimonials/face-3.jpg",
+      "text": "Working with Artur has been a pleasure. Better yet - I alerted them of a minor issue before going to sleep. The issue was fixed the next morning. I couldn't ask for better support. Thank you Artur! This is easily a 5 star freelancer.",
+      "stars": 5
+    },
+    {
+      "name": "Paul Trueman",
+      "role": "Template author",
+      "photo": "img/testimonials/face-4.jpg",
+      "text": "Working with Artur has been a pleasure. Better yet - I alerted them of a minor issue before going to sleep. The issue was fixed the next morning. I couldn't ask for better support. Thank you Artur! This is easily a 5 star freelancer.",
+      "stars": 5
+    }
+  ],
+  "cta": {
+    "title": "Ready to order your project?",
+    "subtitle": "Let's work together!",
+    "buttonText": "Contact me",
+    "buttonLink": "contact.html",
+    "bg": "img/bg.jpg"
+  },
+  "pagination": {
+    "prevLink": "portfolio-single-2.html",
+    "allLink": "portfolio-3-col-masonry.html",
+    "nextLink": "portfolio-single-2.html"
+  }
+}
