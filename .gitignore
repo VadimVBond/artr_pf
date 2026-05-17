@@ -1,1 +1,52 @@
-(js/components-loader.js is a source file, no build artifacts, dependencies, or temp files in the changes)
+# Compiled output
+dist/
+build/
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-store/
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Runtime
+.env
+.env.production
+.env.development
+
+# Logs
+npm-debug.log
+
+# Testing
+coverage/
+
+# OS files
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Migration files (only if they are temporary/work-in-progress)
+# If they are permanent, you might want to keep them, but I'll mark them as temporary for now
+*_migration_*
+migrations/*.tmp
+
+# Cache
+*.cache
+*.memo
+
+# Build artifacts
+*.log
+
+# Ignore the current directory itself if needed
+.ai/
