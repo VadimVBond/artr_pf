@@ -1,39 +1,82 @@
 {
+  "filters": [
+    { "label": "All Categories", "filter": "*", "cssClass": "art-link art-current" },
+    { "label": "Web Templates", "filter": ".webTemplates", "cssClass": "art-link" },
+    { "label": "Logos", "filter": ".logos", "cssClass": "art-link" },
+    { "label": "Drawings", "filter": ".drawings", "cssClass": "art-link" },
+    { "label": "UI Elements", "filter": ".ui", "cssClass": "art-link" }
+  ],
   "projects": [
     {
       "title": "Project title",
-      "description": "Sit amet, consectetur adipisicing elit.",
-      "thumbnail": "./img/works/thumbnail/1.jpg",
+      "description": "Sit amet, consectetur adipisicing elit. Quas, architecto.",
+      "category": "webTemplates",
+      "orientation": "art-horizontal",
+      "thumbnail": "img/works/thumbnail/1.jpg",
+      "original": "img/works/original-size/1.jpg",
       "link": "portfolio-single.html"
     },
     {
       "title": "Project title",
-      "description": "Sit amet, consectetur adipisicing elit.",
-      "thumbnail": "./img/works/thumbnail/2.jpg",
+      "description": "Sit amet, consectetur adipisicing elit. Quas, architecto.",
+      "category": "logos",
+      "orientation": "art-horizontal",
+      "thumbnail": "img/works/thumbnail/2.jpg",
+      "original": "img/works/original-size/2.jpg",
       "link": "portfolio-single.html"
     },
     {
       "title": "Project title",
-      "description": "Sit amet, consectetur adipisicing elit.",
-      "thumbnail": "./img/works/thumbnail/3.jpg",
+      "description": "Sit amet, consectetur adipisicing elit. Quas, architecto.",
+      "category": "drawings",
+      "orientation": "art-horizontal",
+      "thumbnail": "img/works/thumbnail/3.jpg",
+      "original": "img/works/original-size/3.jpg",
       "link": "portfolio-single.html"
     },
     {
       "title": "Project title",
-      "description": "Sit amet, consectetur adipisicing elit.",
-      "thumbnail": "./img/works/thumbnail/4.jpg",
+      "description": "Sit amet, consectetur adipisicing elit. Quas, architecto.",
+      "category": "ui",
+      "orientation": "art-horizontal",
+      "thumbnail": "img/works/thumbnail/4.jpg",
+      "original": "img/works/original-size/4.jpg",
       "link": "portfolio-single.html"
     },
     {
       "title": "Project title",
-      "description": "Sit amet, consectetur adipisicing elit.",
-      "thumbnail": "./img/works/thumbnail/5.jpg",
+      "description": "Sit amet, consectetur adipisicing elit. Quas, architecto.",
+      "category": "webTemplates",
+      "orientation": "art-horizontal",
+      "thumbnail": "img/works/thumbnail/5.jpg",
+      "original": "img/works/original-size/5.jpg",
       "link": "portfolio-single.html"
     },
     {
       "title": "Project title",
-      "description": "Sit amet, consectetur adipisicing elit.",
-      "thumbnail": "./img/works/thumbnail/6.jpg",
+      "description": "Sit amet, consectetur adipisicing elit. Quas, architecto.",
+      "category": "logos",
+      "orientation": "art-horizontal",
+      "thumbnail": "img/works/thumbnail/6.jpg",
+      "original": "img/works/original-size/6.jpg",
+      "link": "portfolio-single.html"
+    },
+    {
+      "title": "Project title",
+      "description": "Sit amet, consectetur adipisicing elit. Quas, architecto.",
+      "category": "drawings",
+      "orientation": "art-horizontal",
+      "thumbnail": "img/works/thumbnail/7.jpg",
+      "original": "img/works/original-size/7.jpg",
+      "link": "portfolio-single.html"
+    },
+    {
+      "title": "Project title",
+      "description": "Sit amet, consectetur adipisicing elit. Quas, architecto.",
+      "category": "ui",
+      "orientation": "art-horizontal",
+      "thumbnail": "img/works/thumbnail/8.jpg",
+      "original": "img/works/original-size/8.jpg",
       "link": "portfolio-single.html"
     }
   ]
