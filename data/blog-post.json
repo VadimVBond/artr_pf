@@ -1,0 +1,26 @@
+{
+  "title": "Publication title",
+  "category": "Ui Design, Graphic",
+  "cover": "img/blog/2.jpg",
+  "intro": "Consectetur adipisicing elit. Magni debitis nemo, minus aut tempora impedit quis quam omnis, odit saepe ipsa sunt magnam culpa quisquam iusto consectetur necessitatibus. Tenetur, eligendi!",
+  "content": "Vero praesentium voluptatibus repellendus, delectus harum. Necessitatibus temporibus, veritatis sapiente laudantium eius rem dolore voluptas porro assumenda quam ea earum ad dolor dolores ut ipsam optio! Numquam dolore quidem sequi eum placeat voluptatum, assumenda et culpa iure nemo vero animi mollitia facere fuga sit debitis doloremque quo tempore nesciunt voluptates cum.",
+  "list": ["Doloribus recusandae", "Alias officia ad nihil", "Culpa repellat", "Officiis deleniti"],
+  "quote": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo officiis aliquam, placeat quis voluptatum ad. Eum, alias quo fuga sed?",
+  "details": [
+    { "label": "Date:", "value": "24.12.2019" },
+    { "label": "Author:", "value": "Artur Carter" },
+    { "label": "Category:", "value": "Product design" }
+  ],
+  "relatedPosts": [
+    { "title": "Blog post title", "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet!", "cover": "img/blog/1.jpg", "link": "blog-post.html" },
+    { "title": "Blog post title", "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet!", "cover": "img/blog/2.jpg", "link": "blog-post.html" },
+    { "title": "Blog post title", "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet!", "cover": "img/blog/3.jpg", "link": "blog-post.html" },
+    { "title": "Blog post title", "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet!", "cover": "img/blog/4.jpg", "link": "blog-post.html" },
+    { "title": "Blog post title", "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet!", "cover": "img/blog/5.jpg", "link": "blog-post.html" }
+  ],
+  "pagination": {
+    "prevLink": "blog-post.html",
+    "allLink": "blog-3-col.html",
+    "nextLink": "blog-post.html"
+  }
+}

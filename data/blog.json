@@ -1,0 +1,17 @@
+{
+  "sectionTitle": "Newsletter",
+  "posts": [
+    { "title": "Blog post title", "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet!", "cover": "img/blog/1.jpg", "link": "blog-post.html" },
+    { "title": "Blog post title", "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet!", "cover": "img/blog/2.jpg", "link": "blog-post.html" },
+    { "title": "Blog post title", "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet!", "cover": "img/blog/3.jpg", "link": "blog-post.html" },
+    { "title": "Blog post title", "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet!", "cover": "img/blog/4.jpg", "link": "blog-post.html" },
+    { "title": "Blog post title", "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet!", "cover": "img/blog/5.jpg", "link": "blog-post.html" },
+    { "title": "Blog post title", "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet!", "cover": "img/blog/6.jpg", "link": "blog-post.html" },
+    { "title": "Blog post title", "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet!", "cover": "img/blog/7.jpg", "link": "blog-post.html" },
+    { "title": "Blog post title", "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet!", "cover": "img/blog/8.jpg", "link": "blog-post.html" }
+  ],
+  "pagination": {
+    "prevLink": "blog-3-col.html",
+    "nextLink": "blog-3-col.html"
+  }
+}
