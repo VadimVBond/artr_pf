@@ -1544,6 +1544,15 @@ menu bar
       -ms-flex-direction: row;
           flex-direction: row;
 }
+.art-menu-bar .art-theme-change::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -25px;
+  width: 25px;
+  height: 100%;
+  background: transparent;
+}
 .art-menu-bar .art-theme-dropdown:hover .art-theme-change {
   visibility: visible;
   opacity: 1;
