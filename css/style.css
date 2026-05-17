@@ -1487,8 +1487,8 @@ menu bar
 }
 .art-menu-bar .art-theme-dropdown {
   position: absolute;
-  bottom: 150px;
-  left: 50%;
+  bottom: 140px;
+  left: 40px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   z-index: 99;
@@ -1503,12 +1503,12 @@ menu bar
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   background: var(--bg-color-light);
   color: var(--text-color);
-  font-size: 10px;
+  font-size: 14px;
   -webkit-box-shadow: inset 0 3px 8px 0 rgba(15, 15, 20, 0.2);
           box-shadow: inset 0 3px 8px 0 rgba(15, 15, 20, 0.2);
   -webkit-transition: 0.3s ease-in-out;
@@ -1520,10 +1520,11 @@ menu bar
 }
 .art-menu-bar .art-theme-change {
   position: absolute;
-  bottom: calc(100% + 15px);
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  top: 50%;
+  left: auto;
+  right: calc(100% + 15px);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   background: linear-gradient(159deg, rgba(37, 37, 50, 0.98) 0%, rgba(35, 35, 45, 0.98) 100%);
   padding: 10px 10px;
   border-radius: 20px;
@@ -1535,12 +1536,19 @@ menu bar
   transition: 0.3s ease-in-out;
   margin: 0;
   pointer-events: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 .art-menu-bar .art-theme-dropdown:hover .art-theme-change {
   visibility: visible;
   opacity: 1;
   pointer-events: all;
-  bottom: calc(100% + 10px);
+  right: calc(100% + 10px);
 }
 .art-menu-bar .art-theme-change li {
   list-style-type: none;
@@ -1549,12 +1557,13 @@ menu bar
   border-radius: 50%;
   height: 25px;
   width: 25px;
-  margin-bottom: 10px;
+  margin-bottom: 0;
+  margin-right: 10px;
   -webkit-box-shadow: inset 0 3px 8px 0 rgba(15, 15, 20, 0.2);
           box-shadow: inset 0 3px 8px 0 rgba(15, 15, 20, 0.2);
 }
 .art-menu-bar .art-theme-change li:last-child {
-  margin-bottom: 0;
+  margin-right: 0;
 }
 .art-menu-bar .art-theme-change li a {
   display: -webkit-box;
