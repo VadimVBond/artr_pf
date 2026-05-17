@@ -2,6 +2,9 @@
   "meta": {
     "title": "Вадим"
   },
+  "home": {
+    "bannerTitle": "Откройте для себя моё <br>Удивительное Арт-пространство!"
+  },
   "navigation": {
     "home": "Главная",
     "portfolio": "Портфолио",
@@ -31,6 +34,35 @@
     "completedProjects": "Выполненных проектов",
     "happyCustomers": "Довольных клиентов",
     "awards": "Наград"
+  },
+  "portfolio": {
+    "details": "Детали проекта",
+    "description": "Описание",
+    "readMore": "Читать далее",
+    "clientReviews": "Отзывы клиентов",
+    "prevProject": "Предыдущий проект",
+    "allProjects": "Все проекты",
+    "nextProject": "Следующий проект"
+  },
+  "blog": {
+    "title": "Статьи",
+    "readMore": "Читать далее",
+    "prevPage": "Предыдущая страница",
+    "nextPage": "Следующая страница",
+    "prevPost": "Предыдущая статья",
+    "allPosts": "Все публикации",
+    "nextPost": "Следующая статья",
+    "similarPosts": "Похожие статьи"
+  },
+  "history": {
+    "education": "Образование",
+    "experience": "Опыт работы",
+    "recommendation": "Рекомендация"
+  },
+  "contact": {
+    "title": "Контактная информация",
+    "formTitle": "Связаться со мной",
+    "submit": "Отправить сообщение"
   },
   "footer": {
     "copyright": "© {year} {name}"

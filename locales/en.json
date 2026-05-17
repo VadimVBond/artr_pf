@@ -2,6 +2,9 @@
   "meta": {
     "title": "Vadim"
   },
+  "home": {
+    "bannerTitle": "Discover my Amazing <br>Art Space!"
+  },
   "navigation": {
     "home": "Home",
     "portfolio": "Portfolio",
@@ -31,6 +34,35 @@
     "completedProjects": "Completed Projects",
     "happyCustomers": "Happy Customers",
     "awards": "Honors and Awards"
+  },
+  "portfolio": {
+    "details": "Project details",
+    "description": "Description",
+    "readMore": "Read More",
+    "clientReviews": "Client reviews",
+    "prevProject": "Previous project",
+    "allProjects": "All projects",
+    "nextProject": "Next project"
+  },
+  "blog": {
+    "title": "Newsletter",
+    "readMore": "Read more",
+    "prevPage": "Previous page",
+    "nextPage": "Next page",
+    "prevPost": "Previous post",
+    "allPosts": "All publications",
+    "nextPost": "Next post",
+    "similarPosts": "Similar posts"
+  },
+  "history": {
+    "education": "Education",
+    "experience": "Work History",
+    "recommendation": "Recommendation"
+  },
+  "contact": {
+    "title": "Contact information",
+    "formTitle": "Get in touch",
+    "submit": "Send message"
   },
   "footer": {
     "copyright": "© {year} {name}"

@@ -13,12 +13,12 @@
         <ul class="main-menu">
           {{#each items}}
           <li class="menu-item {{#if submenu}}menu-item-has-children{{/if}} {{#if active}}current-menu-item{{/if}}">
-            <a href="{{url}}" {{#if target}}target="{{target}}"{{/if}}>{{label}}</a>
+            <a href="{{url}}" {{#if target}}target="{{target}}"{{/if}} data-i18n="{{label}}">{{label}}</a>
             {{#if submenu}}
             <ul class="sub-menu">
               {{#each submenu}}
               <li class="menu-item">
-                <a href="{{url}}" {{#if target}}target="{{target}}"{{/if}}>{{label}}</a>
+                <a href="{{url}}" {{#if target}}target="{{target}}"{{/if}} data-i18n="{{label}}">{{label}}</a>
               </li>
               {{/each}}
             </ul>
@@ -29,8 +29,9 @@
       </nav>
 
       <ul class="art-language-change">
-        <li><a href="#." data-lang="ru">RU</a></li>
-        <li class="art-active-lang"><a href="#." data-lang="en">EN</a></li>
+        <li><a href="#." data-lang="uk">🇺🇦 UK</a></li>
+        <li><a href="#." data-lang="ru">🇷🇺 RU</a></li>
+        <li class="art-active-lang"><a href="#." data-lang="en">🇬🇧 EN</a></li>
       </ul>
     </div>
   </div>

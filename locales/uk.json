@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "title": "Вадим"
+  },
+  "home": {
+    "bannerTitle": "Відкрийте для себе мій <br>Дивовижний Арт-простір!"
+  },
+  "navigation": {
+    "home": "Головна",
+    "portfolio": "Портфоліо",
+    "history": "Історія",
+    "contact": "Контакти",
+    "blog": "Блог",
+    "onepage": "Одна сторінка"
+  },
+  "sidebar": {
+    "residence": "Місце проживання",
+    "city": "Місто",
+    "downloadCv": "Завантажити резюме"
+  },
+  "sections": {
+    "services": "Мої послуги",
+    "pricing": "Ціни",
+    "testimonials": "Відгуки",
+    "brands": "Бренди",
+    "skills": "Мої навички",
+    "languages": "Мови"
+  },
+  "common": {
+    "exploreNow": "Дізнатися більше",
+    "orderNow": "Замовити",
+    "readMore": "Читати далі",
+    "yearsExperience": "Років досвіду",
+    "completedProjects": "Виконаних проектів",
+    "happyCustomers": "Задоволених клієнтів",
+    "awards": "Нагород"
+  },
+  "portfolio": {
+    "details": "Деталі проекту",
+    "description": "Опис",
+    "readMore": "Читати далі",
+    "clientReviews": "Відгуки клієнтів",
+    "prevProject": "Попередній проект",
+    "allProjects": "Всі проекти",
+    "nextProject": "Наступний проект"
+  },
+  "blog": {
+    "title": "Статті",
+    "readMore": "Читати далі",
+    "prevPage": "Попередня сторінка",
+    "nextPage": "Наступна сторінка",
+    "prevPost": "Попередня стаття",
+    "allPosts": "Всі публікації",
+    "nextPost": "Наступна стаття",
+    "similarPosts": "Схожі статті"
+  },
+  "history": {
+    "education": "Освіта",
+    "experience": "Досвід роботи",
+    "recommendation": "Рекомендація"
+  },
+  "contact": {
+    "title": "Контактна інформація",
+    "formTitle": "Зв'язатися зі мною",
+    "submit": "Надіслати повідомлення"
+  },
+  "footer": {
+    "copyright": "© {year} {name}"
+  }
+}

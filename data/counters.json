@@ -1,8 +1,8 @@
 {
   "counters": [
-    { "value": 10, "suffix": "+", "label": "Years Experience" },
-    { "value": 143, "suffix": "", "label": "Completed Projects" },
-    { "value": 114, "suffix": "", "label": "Happy Customers" },
-    { "value": 20, "suffix": "+", "label": "Honors and Awards" }
+    { "value": 10, "suffix": "+", "label": "common.yearsExperience" },
+    { "value": 143, "suffix": "", "label": "common.completedProjects" },
+    { "value": 114, "suffix": "", "label": "common.happyCustomers" },
+    { "value": 20, "suffix": "+", "label": "common.awards" }
   ]
 }

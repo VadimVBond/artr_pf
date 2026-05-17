@@ -2,68 +2,41 @@
   "logo": "Vadim",
   "items": [
     {
-      "label": "Home",
+      "label": "navigation.home",
       "url": "index.html",
       "active": true
     },
     {
-      "label": "Portfolio",
+      "label": "navigation.portfolio",
       "url": "#",
       "submenu": [
-        {
-          "label": "2 Column",
-          "url": "portfolio-2-col.html"
-        },
-        {
-          "label": "3 Column",
-          "url": "portfolio-3-col.html"
-        },
-        {
-          "label": "2 Column Masonry",
-          "url": "portfolio-2-col-masonry.html"
-        },
-        {
-          "label": "3 Column Masonry",
-          "url": "portfolio-3-col-masonry.html"
-        },
-        {
-          "label": "Single Project",
-          "url": "portfolio-single.html"
-        },
-        {
-          "label": "Single Project 2",
-          "url": "portfolio-single-2.html"
-        }
+        { "label": "navigation.portfolio2col", "url": "portfolio-2-col.html" },
+        { "label": "navigation.portfolio3col", "url": "portfolio-3-col.html" },
+        { "label": "navigation.portfolio2colMasonry", "url": "portfolio-2-col-masonry.html" },
+        { "label": "navigation.portfolio3colMasonry", "url": "portfolio-3-col-masonry.html" },
+        { "label": "navigation.portfolioSingle", "url": "portfolio-single.html" },
+        { "label": "navigation.portfolioSingle2", "url": "portfolio-single-2.html" }
       ]
     },
     {
-      "label": "History",
+      "label": "navigation.history",
       "url": "history.html"
     },
     {
-      "label": "Contact",
+      "label": "navigation.contact",
       "url": "contact.html"
     },
     {
-      "label": "Blog",
+      "label": "navigation.blog",
       "url": "#",
       "submenu": [
-        {
-          "label": "2 Column",
-          "url": "blog-2-col.html"
-        },
-        {
-          "label": "3 Column",
-          "url": "blog-3-col.html"
-        },
-        {
-          "label": "Publication",
-          "url": "blog-post.html"
-        }
+        { "label": "navigation.blog2col", "url": "blog-2-col.html" },
+        { "label": "navigation.blog3col", "url": "blog-3-col.html" },
+        { "label": "navigation.blogPost", "url": "blog-post.html" }
       ]
     },
     {
-      "label": "Onepage",
+      "label": "navigation.onepage",
       "url": "onepage.html",
       "target": "_blank"
     }
