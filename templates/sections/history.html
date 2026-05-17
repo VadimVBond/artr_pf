@@ -1,0 +1,95 @@
+<div class="container-fluid">
+  <div class="row p-30-0">
+
+    <!-- Education Timeline -->
+    <div class="col-lg-6">
+      <div class="art-section-title">
+        <div class="art-title-frame">
+          <h4 data-i18n="history.education">Education</h4>
+        </div>
+      </div>
+
+      <div class="art-timeline art-gallery">
+        {{#each education}}
+        <div class="art-timeline-item">
+          <div class="art-timeline-mark-light"></div>
+          <div class="art-timeline-mark"></div>
+          <div class="art-a art-timeline-content">
+            <div class="art-card-header">
+              <div class="art-left-side">
+                <h5>{{institution}}</h5>
+                <div class="art-el-suptitle mb-15">{{role}}</div>
+              </div>
+              <div class="art-right-side">
+                <span class="art-date">{{period}}</span>
+              </div>
+            </div>
+            <p>{{description}}</p>
+            {{#if certLink}}
+            <a data-fancybox="diplome" href="{{certLink}}" class="art-link art-color-link art-w-chevron">{{certLabel}}</a>
+            {{/if}}
+          </div>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+
+    <!-- Experience Timeline -->
+    <div class="col-lg-6">
+      <div class="art-section-title">
+        <div class="art-title-frame">
+          <h4 data-i18n="history.experience">Work History</h4>
+        </div>
+      </div>
+
+      <div class="art-timeline">
+        {{#each experience}}
+        <div class="art-timeline-item">
+          <div class="art-timeline-mark-light"></div>
+          <div class="art-timeline-mark"></div>
+          <div class="art-a art-timeline-content">
+            <div class="art-card-header">
+              <div class="art-left-side">
+                <h5>{{company}}</h5>
+                <div class="art-el-suptitle mb-15">{{role}}</div>
+              </div>
+              <div class="art-right-side">
+                <span class="art-date">{{period}}</span>
+              </div>
+            </div>
+            <p>{{description}}</p>
+            {{#if recommendation}}
+            <a data-fancybox="recommendation" href="#{{recommendation.id}}" class="art-link art-color-link art-w-chevron" data-i18n="history.recommendation">Recommendation</a>
+
+            <!-- Recommendation Popup -->
+            <div class="art-recomendation-popup" style="display: none;" id="{{recommendation.id}}">
+              <div class="art-a art-testimonial">
+                <div class="testimonial-body">
+                  <img class="art-testimonial-face" src="{{recommendation.photo}}" alt="{{recommendation.name}}" loading="lazy">
+                  <h5>{{recommendation.name}}</h5>
+                  <div class="art-el-suptitle mb-15">{{recommendation.role}}</div>
+                  <div class="mb-15">{{recommendation.text}}</div>
+                </div>
+                <div class="art-testimonial-footer">
+                  <div class="art-left-side">
+                    <ul class="art-star-rate">
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="art-right-side"></div>
+                </div>
+              </div>
+            </div>
+            {{/if}}
+          </div>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+
+  </div>
+</div>
