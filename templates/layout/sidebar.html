@@ -1,30 +1,78 @@
 <div class="art-info-bar">
-  <div class="art-info-bar-scroll" id="scrollbar2">
-    <div class="art-info-bar-frame">
-      <div class="art-info-bar-header">
-        <img class="art-avatar" src="{{avatar}}" alt="avatar">
-        <div class="art-avatar-status {{#if available}}art-available{{/if}}"></div>
+  <div class="art-info-bar-frame">
+    <div class="art-info-bar-header">
+      <a class="art-info-bar-btn" href="#.">
+        <i class="fas fa-ellipsis-v"></i>
+      </a>
+    </div>
+
+    <div class="art-header">
+      <div class="art-avatar">
+        <a data-fancybox="avatar" href="{{avatar}}" class="art-avatar-curtain">
+          <img src="{{avatar}}" alt="avatar">
+          <i class="fas fa-expand"></i>
+        </a>
+        <div class="art-lamp-light">
+          <div class="{{#if available}}art-available-lamp{{/if}}"></div>
+        </div>
       </div>
-      <div class="art-info-bar-content">
-        <h5 class="art-name mb-10"><a href="index.html">{{name}}</a></h5>
-        <div class="art-sm-text">{{role}}</div>
-        <div class="art-line"></div>
-        <ul class="art-details-frame">
+      <h5 class="art-name mb-10"><a href="index.html">{{name}}</a></h5>
+      <div class="art-sm-text">{{role}}</div>
+    </div>
+
+    <div id="scrollbar2" class="art-scroll-frame">
+      <div class="art-table p-15-15">
+        <ul>
           <li><h6>Residence:</h6><span>{{contacts.residence}}</span></li>
           <li><h6>City:</h6><span>{{contacts.city}}</span></li>
         </ul>
-        <div class="art-buttons-frame">
-          <a href="files/cv.txt" class="art-btn art-btn-md" download>
-            <span>Download CV</span>
-          </a>
-        </div>
-        <div class="art-line"></div>
-        <div class="art-social-frame">
-          {{#each socials}}
-          <a href="{{url}}" target="_blank"><i class="{{icon}}"></i></a>
-          {{/each}}
-        </div>
       </div>
+
+      <div class="art-ls-divider"></div>
+
+      <div class="art-lang-skills p-30-15">
+        {{#each languages}}
+        <div class="art-lang-skills-item">
+          <div id="{{id}}" class="art-cirkle-progress"></div>
+          <h6>{{name}}</h6>
+        </div>
+        {{/each}}
+      </div>
+
+      <div class="art-ls-divider"></div>
+
+      <div class="art-hard-skills p-30-15">
+        {{#each technical}}
+        <div class="art-hard-skills-item">
+          <div class="art-skill-heading">
+            <h6>{{name}}</h6>
+          </div>
+          <div class="art-line-progress">
+            <div id="{{id}}"></div>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+
+      <div class="art-ls-divider"></div>
+
+      <ul class="art-knowledge-list p-15-0">
+        {{#each knowledge}}
+        <li>{{this}}</li>
+        {{/each}}
+      </ul>
+
+      <div class="art-ls-divider"></div>
+
+      <div class="art-links-frame p-15-15">
+        <a href="files/cv.txt" class="art-link" download>Download cv <i class="fas fa-download"></i></a>
+      </div>
+    </div>
+
+    <div class="art-ls-social">
+      {{#each sidebarLinks}}
+      <a href="{{url}}" target="_blank"><i class="{{icon}}"></i></a>
+      {{/each}}
     </div>
   </div>
 </div>

@@ -1,0 +1,29 @@
+[     969ms] [LOG] DOM Ready. Initializing modules... @ http://127.0.0.1:4174/js/main.js:221
+[     971ms] [LOG] ✓ Theme applied: color-4 @ http://127.0.0.1:4174/js/theme.js:32
+[     971ms] [LOG] ✓ Theme initialized: color-4 @ http://127.0.0.1:4174/js/theme.js:13
+[     974ms] [LOG] ComponentLoader initialized @ http://127.0.0.1:4174/js/components-loader.js:16
+[     975ms] [LOG] Found 6 components to render. @ http://127.0.0.1:4174/js/components-loader.js:286
+[     975ms] [LOG] 🔧 Loading component: layout/sidebar @ http://127.0.0.1:4174/js/components-loader.js:254
+[    1046ms] [LOG] ✅ Loaded template: layout/sidebar.html @ http://127.0.0.1:4174/js/components-loader.js:47
+[    1060ms] [LOG] ✓ Rendered: layout/sidebar (index 0) @ http://127.0.0.1:4174/js/components-loader.js:267
+[    1061ms] [LOG] 🔧 Loading component: layout/navbar @ http://127.0.0.1:4174/js/components-loader.js:254
+[    1137ms] [LOG] ✅ Loaded template: layout/navbar.html @ http://127.0.0.1:4174/js/components-loader.js:47
+[    1149ms] [LOG] ✓ Rendered: layout/navbar (index 1) @ http://127.0.0.1:4174/js/components-loader.js:267
+[    1150ms] [LOG] 🔧 Loading component: sections/counters @ http://127.0.0.1:4174/js/components-loader.js:254
+[    1406ms] [LOG] ✅ Loaded template: sections/counters.html @ http://127.0.0.1:4174/js/components-loader.js:47
+[    1416ms] [LOG] ✓ Rendered: sections/counters (index 2) @ http://127.0.0.1:4174/js/components-loader.js:267
+[    1416ms] [LOG] 🔧 Loading component: sections/services @ http://127.0.0.1:4174/js/components-loader.js:254
+[    1574ms] [LOG] ✅ Loaded template: sections/services.html @ http://127.0.0.1:4174/js/components-loader.js:47
+[    1576ms] [LOG] ✓ Rendered: sections/services (index 3) @ http://127.0.0.1:4174/js/components-loader.js:267
+[    1576ms] [LOG] 🔧 Loading component: sections/pricing @ http://127.0.0.1:4174/js/components-loader.js:254
+[    1590ms] [LOG] ✅ Loaded template: sections/pricing.html @ http://127.0.0.1:4174/js/components-loader.js:47
+[    1593ms] [LOG] ✓ Rendered: sections/pricing (index 4) @ http://127.0.0.1:4174/js/components-loader.js:267
+[    1593ms] [LOG] 🔧 Loading component: layout/footer @ http://127.0.0.1:4174/js/components-loader.js:254
+[    1607ms] [LOG] ✅ Loaded template: layout/footer.html @ http://127.0.0.1:4174/js/components-loader.js:47
+[    1613ms] [LOG] ✓ Rendered: layout/footer (index 5) @ http://127.0.0.1:4174/js/components-loader.js:267
+[    1614ms] [LOG] All 6 components rendered. @ http://127.0.0.1:4174/js/components-loader.js:299
+[    1614ms] [LOG] ✅ All components rendered. Starting Arter engine... @ http://127.0.0.1:4174/js/main.js:226
+[    1632ms] [LOG] ✓ Applied translations: 0 elements @ http://127.0.0.1:4174/js/i18n.js:72
+[    1632ms] [LOG] ✓ i18n initialized: en @ http://127.0.0.1:4174/js/i18n.js:16
+[    1633ms] [LOG] Initializing Arter... @ http://127.0.0.1:4174/js/main.js:14
+[    1680ms] [LOG] ✓ Arter initialized @ http://127.0.0.1:4174/js/main.js:217

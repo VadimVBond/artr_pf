@@ -1,0 +1,70 @@
+[    3147ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://127.0.0.1:4173/js/plugins/bootstrap.bundle.min.js:0
+[    5973ms] [LOG] DOM Ready. Initializing modules... @ http://127.0.0.1:4173/js/main.js:239
+[    5974ms] [LOG] ✓ Theme applied: color-4 @ http://127.0.0.1:4173/js/theme.js:32
+[    5974ms] [LOG] ✓ Theme initialized: color-4 @ http://127.0.0.1:4173/js/theme.js:13
+[    5980ms] [LOG] ComponentLoader initialized @ http://127.0.0.1:4173/js/components-loader.js:16
+[    5980ms] [LOG] Found 6 components to render. @ http://127.0.0.1:4173/js/components-loader.js:140
+[    5981ms] [LOG] 🔧 Loading component: layout/sidebar @ http://127.0.0.1:4173/js/components-loader.js:109
+[    8571ms] [LOG] ✓ Applied translations: 0 elements @ http://127.0.0.1:4173/js/i18n.js:72
+[    8572ms] [LOG] ✓ i18n initialized: en @ http://127.0.0.1:4173/js/i18n.js:16
+[    9404ms] [LOG] ✅ Loaded template: layout/sidebar.html @ http://127.0.0.1:4173/js/components-loader.js:47
+[    9405ms] [LOG] ✓ Rendered: layout/sidebar (index 0) @ http://127.0.0.1:4173/js/components-loader.js:121
+[    9405ms] [LOG] 🔧 Loading component: layout/navbar @ http://127.0.0.1:4173/js/components-loader.js:109
+[   11407ms] [LOG] ✅ Loaded template: layout/navbar.html @ http://127.0.0.1:4173/js/components-loader.js:47
+[   11407ms] [LOG] ✓ Rendered: layout/navbar (index 1) @ http://127.0.0.1:4173/js/components-loader.js:121
+[   11407ms] [LOG] 🔧 Loading component: sections/counters @ http://127.0.0.1:4173/js/components-loader.js:109
+[   14180ms] [LOG] ✅ Loaded template: sections/counters.html @ http://127.0.0.1:4173/js/components-loader.js:47
+[   14181ms] [LOG] ✓ Rendered: sections/counters (index 2) @ http://127.0.0.1:4173/js/components-loader.js:121
+[   14181ms] [LOG] 🔧 Loading component: sections/services @ http://127.0.0.1:4173/js/components-loader.js:109
+[   15410ms] [LOG] ✅ Loaded template: sections/services.html @ http://127.0.0.1:4173/js/components-loader.js:47
+[   15411ms] [LOG] ✓ Rendered: sections/services (index 3) @ http://127.0.0.1:4173/js/components-loader.js:121
+[   15411ms] [LOG] 🔧 Loading component: sections/pricing @ http://127.0.0.1:4173/js/components-loader.js:109
+[   16263ms] [LOG] ✅ Loaded template: sections/pricing.html @ http://127.0.0.1:4173/js/components-loader.js:47
+[   16437ms] [LOG] ✓ Rendered: sections/pricing (index 4) @ http://127.0.0.1:4173/js/components-loader.js:121
+[   16437ms] [LOG] 🔧 Loading component: layout/footer @ http://127.0.0.1:4173/js/components-loader.js:109
+[   17402ms] [LOG] ✅ Loaded template: layout/footer.html @ http://127.0.0.1:4173/js/components-loader.js:47
+[   17615ms] [LOG] ✓ Rendered: layout/footer (index 5) @ http://127.0.0.1:4173/js/components-loader.js:121
+[   17615ms] [LOG] All 6 components rendered. @ http://127.0.0.1:4173/js/components-loader.js:153
+[   17616ms] [LOG] ✅ All components rendered. Starting Arter engine... @ http://127.0.0.1:4173/js/main.js:297
+[   17618ms] [LOG] Initializing Arter... @ http://127.0.0.1:4173/js/main.js:31
+[   17619ms] [WARNING] ⚠️ OverscrollPlugin not found, skipping. @ http://127.0.0.1:4173/js/main.js:39
+[   17639ms] [LOG] ✓ Arter initialized @ http://127.0.0.1:4173/js/main.js:234
+[  253503ms] TypeError: Cannot read properties of undefined (reading 'ScrollbarPlugin')
+    at Module.<anonymous> (http://127.0.0.1:4173/js/plugins/overscroll.min.js:16:9469)
+    at o (http://127.0.0.1:4173/js/plugins/overscroll.min.js:1:430)
+    at Object.<anonymous> (http://127.0.0.1:4173/js/plugins/overscroll.min.js:1:1410)
+    at o (http://127.0.0.1:4173/js/plugins/overscroll.min.js:1:430)
+    at http://127.0.0.1:4173/js/plugins/overscroll.min.js:1:1229
+    at http://127.0.0.1:4173/js/plugins/overscroll.min.js:1:1238
+    at http://127.0.0.1:4173/js/plugins/overscroll.min.js:1:281
+    at http://127.0.0.1:4173/js/plugins/overscroll.min.js:1:296
+[  253559ms] [LOG] DOM Ready. Initializing modules... @ http://127.0.0.1:4173/js/main.js:239
+[  253560ms] [LOG] ✓ Theme applied: color-4 @ http://127.0.0.1:4173/js/theme.js:32
+[  253560ms] [LOG] ✓ Theme initialized: color-4 @ http://127.0.0.1:4173/js/theme.js:13
+[  253567ms] [LOG] ComponentLoader initialized @ http://127.0.0.1:4173/js/components-loader.js:16
+[  253568ms] [LOG] Found 6 components to render. @ http://127.0.0.1:4173/js/components-loader.js:140
+[  253568ms] [LOG] 🔧 Loading component: layout/sidebar @ http://127.0.0.1:4173/js/components-loader.js:109
+[  253608ms] [LOG] ✓ Applied translations: 0 elements @ http://127.0.0.1:4173/js/i18n.js:72
+[  253608ms] [LOG] ✓ i18n initialized: en @ http://127.0.0.1:4173/js/i18n.js:16
+[  253612ms] [LOG] ✅ Loaded template: layout/sidebar.html @ http://127.0.0.1:4173/js/components-loader.js:47
+[  253614ms] [LOG] ✓ Rendered: layout/sidebar (index 0) @ http://127.0.0.1:4173/js/components-loader.js:121
+[  253616ms] [LOG] 🔧 Loading component: layout/navbar @ http://127.0.0.1:4173/js/components-loader.js:109
+[  253757ms] [LOG] ✅ Loaded template: layout/navbar.html @ http://127.0.0.1:4173/js/components-loader.js:47
+[  253759ms] [LOG] ✓ Rendered: layout/navbar (index 1) @ http://127.0.0.1:4173/js/components-loader.js:121
+[  253760ms] [LOG] 🔧 Loading component: sections/counters @ http://127.0.0.1:4173/js/components-loader.js:109
+[  253798ms] [LOG] ✅ Loaded template: sections/counters.html @ http://127.0.0.1:4173/js/components-loader.js:47
+[  253865ms] [LOG] ✓ Rendered: sections/counters (index 2) @ http://127.0.0.1:4173/js/components-loader.js:121
+[  253866ms] [LOG] 🔧 Loading component: sections/services @ http://127.0.0.1:4173/js/components-loader.js:109
+[  253900ms] [LOG] ✅ Loaded template: sections/services.html @ http://127.0.0.1:4173/js/components-loader.js:47
+[  253904ms] [LOG] ✓ Rendered: sections/services (index 3) @ http://127.0.0.1:4173/js/components-loader.js:121
+[  253904ms] [LOG] 🔧 Loading component: sections/pricing @ http://127.0.0.1:4173/js/components-loader.js:109
+[  253926ms] [LOG] ✅ Loaded template: sections/pricing.html @ http://127.0.0.1:4173/js/components-loader.js:47
+[  253935ms] [LOG] ✓ Rendered: sections/pricing (index 4) @ http://127.0.0.1:4173/js/components-loader.js:121
+[  253935ms] [LOG] 🔧 Loading component: layout/footer @ http://127.0.0.1:4173/js/components-loader.js:109
+[  253948ms] [LOG] ✅ Loaded template: layout/footer.html @ http://127.0.0.1:4173/js/components-loader.js:47
+[  253954ms] [LOG] ✓ Rendered: layout/footer (index 5) @ http://127.0.0.1:4173/js/components-loader.js:121
+[  253954ms] [LOG] All 6 components rendered. @ http://127.0.0.1:4173/js/components-loader.js:153
+[  253954ms] [LOG] ✅ All components rendered. Starting Arter engine... @ http://127.0.0.1:4173/js/main.js:297
+[  253955ms] [LOG] Initializing Arter... @ http://127.0.0.1:4173/js/main.js:31
+[  253955ms] [WARNING] ⚠️ OverscrollPlugin not found, skipping. @ http://127.0.0.1:4173/js/main.js:39
+[  253968ms] [LOG] ✓ Arter initialized @ http://127.0.0.1:4173/js/main.js:234

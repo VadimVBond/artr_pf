@@ -1,0 +1,39 @@
+[    1230ms] TypeError: Cannot read properties of undefined (reading 'ScrollbarPlugin')
+    at Module.<anonymous> (http://127.0.0.1:4173/js/plugins/overscroll.min.js:16:9469)
+    at o (http://127.0.0.1:4173/js/plugins/overscroll.min.js:1:430)
+    at Object.<anonymous> (http://127.0.0.1:4173/js/plugins/overscroll.min.js:1:1410)
+    at o (http://127.0.0.1:4173/js/plugins/overscroll.min.js:1:430)
+    at http://127.0.0.1:4173/js/plugins/overscroll.min.js:1:1229
+    at http://127.0.0.1:4173/js/plugins/overscroll.min.js:1:1238
+    at http://127.0.0.1:4173/js/plugins/overscroll.min.js:1:281
+    at http://127.0.0.1:4173/js/plugins/overscroll.min.js:1:296
+[    1197ms] [LOG] DOM Ready. Initializing modules... @ http://127.0.0.1:4173/js/main.js:239
+[    1199ms] [LOG] ✓ Theme applied: color-4 @ http://127.0.0.1:4173/js/theme.js:32
+[    1199ms] [LOG] ✓ Theme initialized: color-4 @ http://127.0.0.1:4173/js/theme.js:13
+[    1200ms] [LOG] ComponentLoader initialized @ http://127.0.0.1:4173/js/components-loader.js:16
+[    1201ms] [LOG] Found 6 components to render. @ http://127.0.0.1:4173/js/components-loader.js:140
+[    1201ms] [LOG] 🔧 Loading component: layout/sidebar @ http://127.0.0.1:4173/js/components-loader.js:109
+[    1578ms] [LOG] ✓ Applied translations: 0 elements @ http://127.0.0.1:4173/js/i18n.js:72
+[    1578ms] [LOG] ✓ i18n initialized: en @ http://127.0.0.1:4173/js/i18n.js:16
+[    1578ms] [LOG] ✅ Loaded template: layout/sidebar.html @ http://127.0.0.1:4173/js/components-loader.js:47
+[    1579ms] [LOG] ✓ Rendered: layout/sidebar (index 0) @ http://127.0.0.1:4173/js/components-loader.js:121
+[    1580ms] [LOG] 🔧 Loading component: layout/navbar @ http://127.0.0.1:4173/js/components-loader.js:109
+[    2365ms] [LOG] ✅ Loaded template: layout/navbar.html @ http://127.0.0.1:4173/js/components-loader.js:47
+[    2816ms] [LOG] ✓ Rendered: layout/navbar (index 1) @ http://127.0.0.1:4173/js/components-loader.js:121
+[    2817ms] [LOG] 🔧 Loading component: sections/counters @ http://127.0.0.1:4173/js/components-loader.js:109
+[    3604ms] [LOG] ✅ Loaded template: sections/counters.html @ http://127.0.0.1:4173/js/components-loader.js:47
+[    3607ms] [LOG] ✓ Rendered: sections/counters (index 2) @ http://127.0.0.1:4173/js/components-loader.js:121
+[    3607ms] [LOG] 🔧 Loading component: sections/services @ http://127.0.0.1:4173/js/components-loader.js:109
+[    3857ms] [LOG] ✅ Loaded template: sections/services.html @ http://127.0.0.1:4173/js/components-loader.js:47
+[    3859ms] [LOG] ✓ Rendered: sections/services (index 3) @ http://127.0.0.1:4173/js/components-loader.js:121
+[    3859ms] [LOG] 🔧 Loading component: sections/pricing @ http://127.0.0.1:4173/js/components-loader.js:109
+[    4081ms] [LOG] ✅ Loaded template: sections/pricing.html @ http://127.0.0.1:4173/js/components-loader.js:47
+[    4138ms] [LOG] ✓ Rendered: sections/pricing (index 4) @ http://127.0.0.1:4173/js/components-loader.js:121
+[    4138ms] [LOG] 🔧 Loading component: layout/footer @ http://127.0.0.1:4173/js/components-loader.js:109
+[    4227ms] [LOG] ✅ Loaded template: layout/footer.html @ http://127.0.0.1:4173/js/components-loader.js:47
+[    4371ms] [LOG] ✓ Rendered: layout/footer (index 5) @ http://127.0.0.1:4173/js/components-loader.js:121
+[    4371ms] [LOG] All 6 components rendered. @ http://127.0.0.1:4173/js/components-loader.js:153
+[    4371ms] [LOG] ✅ All components rendered. Starting Arter engine... @ http://127.0.0.1:4173/js/main.js:297
+[    4371ms] [LOG] Initializing Arter... @ http://127.0.0.1:4173/js/main.js:31
+[    4371ms] [WARNING] ⚠️ OverscrollPlugin not found, skipping. @ http://127.0.0.1:4173/js/main.js:39
+[    4383ms] [LOG] ✓ Arter initialized @ http://127.0.0.1:4173/js/main.js:234

@@ -9,6 +9,70 @@
     "city": "Kharkov",
     "email": "example@mail.com"
   },
+  "languages": [
+    {
+      "id": "circleprog1",
+      "name": "French"
+    },
+    {
+      "id": "circleprog2",
+      "name": "English"
+    },
+    {
+      "id": "circleprog3",
+      "name": "Spanish"
+    }
+  ],
+  "technical": [
+    {
+      "id": "lineprog1",
+      "name": "html"
+    },
+    {
+      "id": "lineprog2",
+      "name": "CSS"
+    },
+    {
+      "id": "lineprog3",
+      "name": "Js"
+    },
+    {
+      "id": "lineprog4",
+      "name": "PHP"
+    },
+    {
+      "id": "lineprog5",
+      "name": "Wordpress"
+    }
+  ],
+  "knowledge": [
+    "Bootstrap, Materialize",
+    "Stylus, Sass, Less",
+    "Gulp, Webpack, Grunt",
+    "GIT knowledge"
+  ],
+  "sidebarLinks": [
+    {
+      "icon": "far fa-circle",
+      "url": "#"
+    },
+    {
+      "icon": "far fa-circle",
+      "url": "#"
+    },
+    {
+      "icon": "far fa-circle",
+      "url": "#"
+    },
+    {
+      "icon": "far fa-circle",
+      "url": "#"
+    },
+    {
+      "icon": "far fa-circle",
+      "url": "#"
+    }
+  ],
   "socials": [
     {
       "icon": "fab fa-facebook",

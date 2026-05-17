@@ -1,0 +1,223 @@
+- generic [ref=e4]:
+  - generic [ref=e6]:
+    - text: 
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - link "avatar " [ref=e9] [cursor=pointer]:
+          - /url: ./img/face-1.jpg
+          - img "avatar" [ref=e10]
+          - generic [ref=e11]: 
+        - generic [ref=e12]: I am available for freelance hire
+      - heading "Artur Carter" [level=5] [ref=e13]:
+        - link "Artur Carter" [ref=e14] [cursor=pointer]:
+          - /url: index.html
+      - generic [ref=e15]:
+        - text: Front-end Deweloper
+        - text: Ui/UX Designer,
+    - generic [ref=e17]:
+      - list [ref=e19]:
+        - listitem [ref=e20]:
+          - heading "Residence:" [level=6] [ref=e21]
+          - generic [ref=e22]: Canada
+        - listitem [ref=e23]:
+          - heading "City:" [level=6] [ref=e24]
+          - generic [ref=e25]: Toronto
+        - listitem [ref=e26]:
+          - heading "Age:" [level=6] [ref=e27]
+          - generic [ref=e28]: "26"
+      - generic [ref=e30]:
+        - generic [ref=e31]:
+          - generic [ref=e32]:
+            - img [ref=e33]
+            - generic [ref=e36]: 100 %
+          - heading "French" [level=6] [ref=e37]
+        - generic [ref=e38]:
+          - generic [ref=e39]:
+            - img [ref=e40]
+            - generic [ref=e43]: 90 %
+          - heading "English" [level=6] [ref=e44]
+        - generic [ref=e45]:
+          - generic [ref=e46]:
+            - img [ref=e47]
+            - generic [ref=e50]: 70 %
+          - heading "Spanish" [level=6] [ref=e51]
+      - generic [ref=e53]:
+        - generic [ref=e54]:
+          - heading "html" [level=6] [ref=e56]
+          - generic [ref=e58]:
+            - img [ref=e59]
+            - generic [ref=e60]: 90 %
+        - generic [ref=e61]:
+          - heading "CSS" [level=6] [ref=e63]
+          - generic [ref=e65]:
+            - img [ref=e66]
+            - generic [ref=e67]: 95 %
+        - generic [ref=e68]:
+          - heading "Js" [level=6] [ref=e70]
+          - generic [ref=e72]:
+            - img [ref=e73]
+            - generic [ref=e74]: 75 %
+        - generic [ref=e75]:
+          - heading "PHP" [level=6] [ref=e77]
+          - generic [ref=e79]:
+            - img [ref=e80]
+            - generic [ref=e81]: 65 %
+        - generic [ref=e82]:
+          - heading "Wordpress" [level=6] [ref=e84]
+          - generic [ref=e86]:
+            - img [ref=e87]
+            - generic [ref=e88]: 85 %
+      - list [ref=e90]:
+        - listitem [ref=e91]: Bootstrap, Materialize
+        - listitem [ref=e92]: Stylus, Sass, Less
+        - listitem [ref=e93]: Gulp, Webpack, Grunt
+        - listitem [ref=e94]: GIT knowledge
+      - link "Download cv " [ref=e97] [cursor=pointer]:
+        - /url: files/cv.txt
+        - text: Download cv
+        - generic [ref=e98]: 
+    - generic [ref=e99]:
+      - link "" [ref=e100] [cursor=pointer]:
+        - /url: "#."
+        - generic [ref=e101]: 
+      - link "" [ref=e102] [cursor=pointer]:
+        - /url: "#."
+        - generic [ref=e103]: 
+      - link "" [ref=e104] [cursor=pointer]:
+        - /url: "#."
+        - generic [ref=e105]: 
+      - link "" [ref=e106] [cursor=pointer]:
+        - /url: "#."
+        - generic [ref=e107]: 
+      - link "" [ref=e108] [cursor=pointer]:
+        - /url: "#."
+        - generic [ref=e109]: 
+  - generic [ref=e115]:
+    - generic [ref=e117]:
+      - heading "Contact information" [level=4] [ref=e121]
+      - list [ref=e125]:
+        - listitem [ref=e126]:
+          - heading "Country:" [level=6] [ref=e127]
+          - generic [ref=e128]: Canada
+        - listitem [ref=e129]:
+          - heading "City:" [level=6] [ref=e130]
+          - generic [ref=e131]: Toronto
+        - listitem [ref=e132]:
+          - heading "Streat:" [level=6] [ref=e133]
+          - generic [ref=e134]: 20 Dellbank Rd
+      - list [ref=e138]:
+        - listitem [ref=e139]:
+          - heading "Email:" [level=6] [ref=e140]
+          - generic [ref=e141]: carter.inbox@mail.com
+        - listitem [ref=e142]:
+          - heading "Telegram:" [level=6] [ref=e143]
+          - generic [ref=e144]: "@arter"
+        - listitem [ref=e145]:
+          - heading "Skype:" [level=6] [ref=e146]
+          - generic [ref=e147]: Arter
+      - list [ref=e151]:
+        - listitem [ref=e152]:
+          - heading "Support service:" [level=6] [ref=e153]
+          - generic [ref=e154]: +78 (098) 333 11 22
+        - listitem [ref=e155]:
+          - heading "Office:" [level=6] [ref=e156]
+          - generic [ref=e157]: +78 (098) 326 11 22
+        - listitem [ref=e158]:
+          - heading "Personal:" [level=6] [ref=e159]
+          - generic [ref=e160]: +78 (077) 114 26 53
+      - generic [ref=e161]:
+        - heading "Get in touch" [level=4] [ref=e164]
+        - generic [ref=e166]:
+          - generic [ref=e167]:
+            - textbox "" [ref=e168]:
+              - /placeholder: Name
+            - generic [ref=e170]: 
+          - generic [ref=e171]:
+            - textbox "" [ref=e172]:
+              - /placeholder: Email
+            - generic [ref=e174]: 
+          - generic [ref=e175]:
+            - textbox "" [ref=e176]:
+              - /placeholder: Message
+            - generic [ref=e178]: 
+          - generic [ref=e179]:
+            - button "Send message" [ref=e180] [cursor=pointer]:
+              - generic [ref=e181]: Send message
+            - generic:
+              - text: Success
+              - generic: 
+    - generic [ref=e183]:
+      - img "brand" [ref=e185]
+      - img "brand" [ref=e187]
+      - img "brand" [ref=e189]
+      - img "brand" [ref=e191]
+    - contentinfo [ref=e192]:
+      - generic [ref=e193]: © 2020 Artur Carter
+      - generic [ref=e194]:
+        - text: "Template author:"
+        - link "Nazar Miller" [ref=e195] [cursor=pointer]:
+          - /url: https://themeforest.net/user/millerdigitaldesign
+  - generic [ref=e197]:
+    - link [ref=e199] [cursor=pointer]:
+      - /url: "#."
+    - link "Contact" [ref=e202] [cursor=pointer]:
+      - /url: contact.html
+    - generic [ref=e203]:
+      - navigation [ref=e204]:
+        - list [ref=e205]:
+          - listitem [ref=e206]:
+            - link "Home" [ref=e207] [cursor=pointer]:
+              - /url: index.html
+          - listitem [ref=e208]:
+            - link "Portfolio" [ref=e209] [cursor=pointer]:
+              - /url: "#."
+            - list:
+              - listitem:
+                - link "2 column":
+                  - /url: portfolio-2-col.html
+              - listitem:
+                - link "3 column":
+                  - /url: portfolio-3-col.html
+              - listitem:
+                - link "2 column masonry":
+                  - /url: portfolio-2-col-masonry.html
+              - listitem:
+                - link "3 column masonry":
+                  - /url: portfolio-3-col-masonry.html
+              - listitem:
+                - link "Single project":
+                  - /url: portfolio-single.html
+              - listitem:
+                - link "Single project 2":
+                  - /url: portfolio-single-2.html
+            - text: 
+          - listitem [ref=e210]:
+            - link "History" [ref=e211] [cursor=pointer]:
+              - /url: history.html
+          - listitem [ref=e212]:
+            - link "Contact" [ref=e213] [cursor=pointer]:
+              - /url: contact.html
+          - listitem [ref=e214]:
+            - link "Blog" [ref=e215] [cursor=pointer]:
+              - /url: "#."
+            - list:
+              - listitem:
+                - link "2 column":
+                  - /url: blog-2-col.html
+              - listitem:
+                - link "3 column":
+                  - /url: blog-3-col.html
+              - listitem:
+                - link "Publication":
+                  - /url: blog-post.html
+            - text: 
+          - listitem [ref=e216]:
+            - link "Onepage" [ref=e217] [cursor=pointer]:
+              - /url: onepage.html
+      - list [ref=e218]:
+        - listitem [ref=e219]:
+          - link "FR" [ref=e220] [cursor=pointer]:
+            - /url: "#."
+        - listitem [ref=e221]:
+          - link "EN" [ref=e222] [cursor=pointer]:
+            - /url: "#."

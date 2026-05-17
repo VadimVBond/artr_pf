@@ -1,0 +1,140 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e6]:
+    - img "avatar" [ref=e8]
+    - generic [ref=e9]:
+      - heading "Vadim" [level=5] [ref=e10]:
+        - link "Vadim" [ref=e11] [cursor=pointer]:
+          - /url: index.html
+      - generic [ref=e12]:
+        - text: Front-end Developer
+        - text: UI/UX Designer
+      - list [ref=e13]:
+        - listitem [ref=e14]:
+          - heading "Residence:" [level=6] [ref=e15]
+          - text: Ukraine
+        - listitem [ref=e16]:
+          - heading "City:" [level=6] [ref=e17]
+          - text: Kharkov
+      - link "Download CV" [ref=e19] [cursor=pointer]:
+        - /url: files/cv.txt
+        - generic [ref=e20]: Download CV
+      - generic:
+        - link:
+          - /url: "#"
+        - link:
+          - /url: "#"
+        - link:
+          - /url: "#"
+        - link:
+          - /url: "#"
+  - generic [ref=e23]:
+    - heading "Vadim" [level=5] [ref=e25]:
+      - link "Vadim" [ref=e26] [cursor=pointer]:
+        - /url: index.html
+    - list [ref=e28]:
+      - listitem [ref=e29]:
+        - link "Home" [ref=e30] [cursor=pointer]:
+          - /url: index.html
+      - listitem [ref=e31]:
+        - link "Portfolio" [ref=e32] [cursor=pointer]:
+          - /url: "#"
+        - list [ref=e33]:
+          - listitem [ref=e34]:
+            - link "2 Column" [ref=e35] [cursor=pointer]:
+              - /url: portfolio-2-col.html
+          - listitem [ref=e36]:
+            - link "3 Column" [ref=e37] [cursor=pointer]:
+              - /url: portfolio-3-col.html
+      - listitem [ref=e38]:
+        - link "History" [ref=e39] [cursor=pointer]:
+          - /url: history.html
+      - listitem [ref=e40]:
+        - link "Contact" [ref=e41] [cursor=pointer]:
+          - /url: contact.html
+      - listitem [ref=e42]:
+        - link "Blog" [ref=e43] [cursor=pointer]:
+          - /url: blog-list.html
+  - main [ref=e44]:
+    - generic [ref=e45]:
+      - generic [ref=e46]:
+        - generic [ref=e51]:
+          - heading "Front-end Developer & UI/UX Designer" [level=1] [ref=e52]
+          - paragraph [ref=e53]: Creating digital experiences that matter.
+        - generic [ref=e59]:
+          - generic:
+            - heading [level=4]
+        - generic [ref=e62]:
+          - heading "My Services" [level=4] [ref=e65]
+          - generic [ref=e66]:
+            - generic [ref=e69]:
+              - heading "Web Development" [level=5] [ref=e70]
+              - generic [ref=e71]: High quality code and modern standards.
+              - link "Order now " [ref=e73] [cursor=pointer]:
+                - /url: contact.html
+            - generic [ref=e76]:
+              - heading "UI/UX Design" [level=5] [ref=e77]
+              - generic [ref=e78]: Modern and user-friendly interfaces.
+              - link "Order now " [ref=e80] [cursor=pointer]:
+                - /url: contact.html
+            - generic [ref=e83]:
+              - heading "Sound Design" [level=5] [ref=e84]
+              - generic [ref=e85]: Quality sound design for your projects.
+              - link "Order now " [ref=e87] [cursor=pointer]:
+                - /url: contact.html
+            - generic [ref=e90]:
+              - heading "Game Design" [level=5] [ref=e91]
+              - generic [ref=e92]: Development of unique game concepts.
+              - link "Order now " [ref=e94] [cursor=pointer]:
+                - /url: contact.html
+            - generic [ref=e97]:
+              - heading "Advertising" [level=5] [ref=e98]
+              - generic [ref=e99]: Promotion of your products online.
+              - link "Order now " [ref=e101] [cursor=pointer]:
+                - /url: contact.html
+        - generic [ref=e104]:
+          - heading "Pricing" [level=4] [ref=e107]
+          - generic [ref=e108]:
+            - generic [ref=e110]:
+              - heading "Basic" [level=5] [ref=e111]
+              - generic [ref=e112]: $40
+              - generic [ref=e113]: For simple projects
+              - list [ref=e114]:
+                - listitem [ref=e115]: HTML/CSS
+                - listitem [ref=e116]: Responsive
+                - listitem [ref=e117]: 1 Revision
+              - link "Order now" [ref=e118] [cursor=pointer]:
+                - /url: contact.html
+                - generic [ref=e119]: Order now
+            - generic [ref=e121]:
+              - heading "Standard" [level=5] [ref=e122]
+              - generic [ref=e123]: $90
+              - generic [ref=e124]: Most popular choice
+              - list [ref=e125]:
+                - listitem [ref=e126]: JS Integration
+                - listitem [ref=e127]: SEO Optimized
+                - listitem [ref=e128]: 3 Revisions
+                - listitem [ref=e129]: Support
+              - link "Order now" [ref=e130] [cursor=pointer]:
+                - /url: contact.html
+                - generic [ref=e131]: Order now
+            - generic [ref=e133]:
+              - heading "Premium" [level=5] [ref=e134]
+              - generic [ref=e135]: $190
+              - generic [ref=e136]: Complex solutions
+              - list [ref=e137]:
+                - listitem [ref=e138]: Full Stack
+                - listitem [ref=e139]: Admin Panel
+                - listitem [ref=e140]: Unlimited Revisions
+                - listitem [ref=e141]: 24/7 Support
+              - link "Order now" [ref=e142] [cursor=pointer]:
+                - /url: contact.html
+                - generic [ref=e143]: Order now
+      - generic [ref=e150]:
+        - paragraph [ref=e151]: © 2025 Vadim
+        - generic:
+          - link:
+            - /url: "#"
+          - link:
+            - /url: "#"
+          - link:
+            - /url: "#"

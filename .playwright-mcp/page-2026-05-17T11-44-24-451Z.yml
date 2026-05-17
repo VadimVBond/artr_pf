@@ -1,0 +1,90 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e6]:
+    - img "avatar" [ref=e8]
+    - generic [ref=e9]:
+      - heading "Vadim" [level=5] [ref=e10]:
+        - link "Vadim" [ref=e11] [cursor=pointer]:
+          - /url: index.html
+      - generic [ref=e12]:
+        - text: Front-end Developer
+        - text: UI/UX Designer
+      - list [ref=e13]:
+        - listitem [ref=e14]:
+          - heading "Residence:" [level=6] [ref=e15]
+          - text: Ukraine
+        - listitem [ref=e16]:
+          - heading "City:" [level=6] [ref=e17]
+          - text: Kharkov
+      - link "Download CV" [ref=e19] [cursor=pointer]:
+        - /url: files/cv.txt
+        - generic [ref=e20]: Download CV
+      - generic [ref=e21]:
+        - text: "{{#each socials}}"
+        - link:
+          - /url: "{{url}}"
+        - text: "{{/each}}"
+  - generic [ref=e24]:
+    - heading "Vadim" [level=5] [ref=e26]:
+      - link "Vadim" [ref=e27] [cursor=pointer]:
+        - /url: index.html
+    - list [ref=e29]:
+      - text: "{{#each items}}"
+      - listitem [ref=e30]:
+        - 'link "{{label}}" [ref=e31] [cursor=pointer]':
+          - /url: "{{url}}"
+        - text: "{{#if submenu}}"
+        - list [ref=e32]:
+          - text: "{{#each submenu}}"
+          - listitem [ref=e33]:
+            - 'link "{{label}}" [ref=e34] [cursor=pointer]':
+              - /url: "{{url}}"
+          - text: "{{/each}}"
+        - text: "{{/if}}"
+      - text: "{{/each}}"
+  - main [ref=e35]:
+    - generic [ref=e36]:
+      - generic [ref=e37]:
+        - generic [ref=e42]:
+          - heading "Front-end Developer & UI/UX Designer" [level=1] [ref=e43]
+          - paragraph [ref=e44]: Creating digital experiences that matter.
+        - generic [ref=e47]:
+          - 'heading "{{title}}" [level=4] [ref=e52]'
+          - generic [ref=e53]:
+            - text: "{{#each items}}"
+            - generic [ref=e55]:
+              - generic [ref=e56]: "NaN{{suffix}}"
+              - 'heading "{{label}}" [level=6] [ref=e57]'
+            - text: "{{/each}}"
+        - generic [ref=e60]:
+          - heading "My Services" [level=4] [ref=e63]
+          - generic [ref=e64]:
+            - text: "{{#each items}}"
+            - generic [ref=e67]:
+              - heading "My Services" [level=5] [ref=e68]
+              - generic [ref=e69]: "{{desc}}"
+              - link "Order now " [ref=e71] [cursor=pointer]:
+                - /url: "{{link}}"
+            - text: "{{/each}}"
+        - generic [ref=e74]:
+          - heading "Pricing" [level=4] [ref=e77]
+          - generic [ref=e78]:
+            - text: "{{#each items}}"
+            - generic [ref=e80]:
+              - heading "Pricing" [level=5] [ref=e81]
+              - generic [ref=e82]: "{{price}}"
+              - generic [ref=e83]: "{{desc}}"
+              - list [ref=e84]:
+                - text: "{{#each features}}"
+                - listitem [ref=e85]: "{{this}}"
+                - text: "{{/each}}"
+              - link "Order now" [ref=e86] [cursor=pointer]:
+                - /url: contact.html
+                - generic [ref=e87]: Order now
+            - text: "{{/each}}"
+      - generic [ref=e94]:
+        - paragraph [ref=e95]: © 2025 Vadim
+        - generic [ref=e96]:
+          - text: "{{#each socials}}"
+          - link:
+            - /url: "{{url}}"
+          - text: "{{/each}}"

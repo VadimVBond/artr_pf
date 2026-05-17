@@ -1,0 +1,10 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - heading "Vadim" [level=4] [ref=e4]
+    - generic [ref=e5]:
+      - img [ref=e6]
+      - generic [ref=e7]: 32 %
+  - main [ref=e8]:
+    - generic [ref=e14]:
+      - heading "Front-end Developer & UI/UX Designer" [level=1] [ref=e15]
+      - paragraph [ref=e16]: Creating digital experiences that matter.

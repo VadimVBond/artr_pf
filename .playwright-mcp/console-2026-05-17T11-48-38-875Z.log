@@ -1,0 +1,4 @@
+[    3421ms] [LOG] DOM Ready. Initializing modules... @ http://127.0.0.1:4174/js/main.js:221
+[    3421ms] [LOG] ✅ All components rendered. Starting Arter engine... @ http://127.0.0.1:4174/js/main.js:226
+[    3422ms] [LOG] Initializing Arter... @ http://127.0.0.1:4174/js/main.js:14
+[    3475ms] [LOG] ✓ Arter initialized @ http://127.0.0.1:4174/js/main.js:217

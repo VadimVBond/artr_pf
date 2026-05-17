@@ -17,6 +17,22 @@
         {
           "label": "3 Column",
           "url": "portfolio-3-col.html"
+        },
+        {
+          "label": "2 Column Masonry",
+          "url": "portfolio-2-col-masonry.html"
+        },
+        {
+          "label": "3 Column Masonry",
+          "url": "portfolio-3-col-masonry.html"
+        },
+        {
+          "label": "Single Project",
+          "url": "portfolio-single.html"
+        },
+        {
+          "label": "Single Project 2",
+          "url": "portfolio-single-2.html"
         }
       ]
     },
@@ -30,7 +46,26 @@
     },
     {
       "label": "Blog",
-      "url": "blog-list.html"
+      "url": "#",
+      "submenu": [
+        {
+          "label": "2 Column",
+          "url": "blog-2-col.html"
+        },
+        {
+          "label": "3 Column",
+          "url": "blog-3-col.html"
+        },
+        {
+          "label": "Publication",
+          "url": "blog-post.html"
+        }
+      ]
+    },
+    {
+      "label": "Onepage",
+      "url": "onepage.html",
+      "target": "_blank"
     }
   ]
 }

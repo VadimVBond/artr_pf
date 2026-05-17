@@ -10,23 +10,6 @@ Refactored by:  Component-based architecture
 $(function() {
   "use strict";
 
-  // Initialize modules
-  const modules = {
-    theme: window.themeSwitcher,
-    i18n: window.i18n,
-    loader: null,
-    listRenderer: null
-  };
-
-  // Wait for all components to be ready before initializing
-  function waitForComponents(callback) {
-    if (document.querySelectorAll('[data-component]').length > 0) {
-      window.addEventListener('componentsReady', callback, { once: true });
-    } else {
-      callback();
-    }
-  }
-
   // Main Initialization Function
   function initArter() {
     console.log('Initializing Arter...');
@@ -216,6 +199,23 @@ if (typeof Scrollbar !== 'undefined') {
       }
     });
 
+    $('.art-language-change a').off().on('click', function(event) {
+      event.preventDefault();
+
+      const lang = $(this).data('lang');
+      if (!lang || !window.i18n) return;
+
+      window.i18n.setLanguage(lang);
+      $('.art-language-change li').removeClass('art-active-lang');
+      $(this).parent().addClass('art-active-lang');
+    });
+
+    if (window.i18n) {
+      const currentLang = window.i18n.getLanguage();
+      $('.art-language-change li').removeClass('art-active-lang');
+      $(`.art-language-change a[data-lang="${currentLang}"]`).parent().addClass('art-active-lang');
+    }
+
     // Form
     $('.art-input').keyup(function() {
       $(this).toggleClass('art-active', !!$(this).val());
@@ -235,20 +235,32 @@ if (typeof Scrollbar !== 'undefined') {
     console.log('✓ Arter initialized');
   }
 
-  // Preloader
-$(document).ready(function() {
+  // Main startup sequence
   console.log('DOM Ready. Initializing modules...');
 
-  // 1. Initialize Theme & i18n immediately
   if (window.themeSwitcher) window.themeSwitcher.init();
-  if (window.i18n) window.i18n.init();
 
-  // 2. Initialize Component Loader
-  const loader = new ComponentLoader();
-  window.componentLoader = loader; // Make global for debugging
-  loader.init();
+  async function startArterApp() {
+    console.log('✅ All components rendered. Starting Arter engine...');
 
-  // 3. Animate Preloader (Visuals)
+    if (window.i18n) {
+      await window.i18n.init();
+    }
+
+    initArter();
+  }
+
+  if (typeof window.ComponentLoader === 'function' && document.querySelector('[data-component]')) {
+    const loader = new ComponentLoader();
+    window.componentLoader = loader; // Make global for debugging
+
+    window.addEventListener('componentsReady', startArterApp, { once: true });
+    loader.init();
+  } else {
+    startArterApp();
+  }
+
+  // Preloader
   if (typeof anime !== 'undefined') {
     anime({
       targets: '.art-preloader .art-preloader-content',
@@ -283,24 +295,4 @@ $(document).ready(function() {
     });
     preBar.animate(1);
   }
-});
-
-// 4. MAIN INITIALIZATION TRIGGER
-// This function waits for the custom event fired by ComponentLoader
-function waitForComponents(callback) {
-  // Check if components are already rendered (edge case)
-  if (document.querySelectorAll('[data-component]').length === 0) {
-    callback();
-    return;
-  }
-
-  window.addEventListener('componentsReady', () => {
-    console.log('✅ All components rendered. Starting Arter engine...');
-    callback();
-  }, { once: true });
-}
-
-  // Wait for components then init
-  waitForComponents(initArter);
-
 });

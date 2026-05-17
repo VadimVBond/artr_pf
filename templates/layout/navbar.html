@@ -1,22 +1,37 @@
 <div class="art-menu-bar">
   <div class="art-menu-bar-frame">
     <div class="art-menu-bar-header">
-      <h5 class="art-name mb-10"><a href="index.html">{{logo}}</a></h5>
-      <div class="art-menu-bar-btn art-disabled"></div>
+      <div class="art-menu-bar-btn">
+        <span></span>
+      </div>
     </div>
-    <ul class="art-main-menu">
-      {{#each items}}
-      <li class="{{#if active}}art-current-menu-item{{/if}} {{#if submenu}}menu-item-has-children{{/if}}">
-        <a href="{{url}}">{{label}}</a>
-        {{#if submenu}}
-        <ul class="sub-menu">
-          {{#each submenu}}
-          <li><a href="{{url}}">{{label}}</a></li>
+
+    <div class="art-current-page"></div>
+
+    <div class="art-scroll-frame">
+      <nav id="swupMenu">
+        <ul class="main-menu">
+          {{#each items}}
+          <li class="menu-item {{#if submenu}}menu-item-has-children{{/if}} {{#if active}}current-menu-item{{/if}}">
+            <a href="{{url}}" {{#if target}}target="{{target}}"{{/if}}>{{label}}</a>
+            {{#if submenu}}
+            <ul class="sub-menu">
+              {{#each submenu}}
+              <li class="menu-item">
+                <a href="{{url}}" {{#if target}}target="{{target}}"{{/if}}>{{label}}</a>
+              </li>
+              {{/each}}
+            </ul>
+            {{/if}}
+          </li>
           {{/each}}
         </ul>
-        {{/if}}
-      </li>
-      {{/each}}
-    </ul>
+      </nav>
+
+      <ul class="art-language-change">
+        <li><a href="#." data-lang="ru">RU</a></li>
+        <li class="art-active-lang"><a href="#." data-lang="en">EN</a></li>
+      </ul>
+    </div>
   </div>
 </div>

@@ -1,0 +1,18 @@
+- generic [ref=e2]:
+  - heading "Component Testing Page" [level=1] [ref=e3]
+  - heading "1. Counters (data-driven)" [level=2] [ref=e5]
+  - heading "2. Section Titles (data-driven)" [level=2] [ref=e7]
+  - generic [ref=e10]:
+    - heading "3. i18n (translations)" [level=2] [ref=e11]
+    - paragraph [ref=e12]: Home
+    - paragraph [ref=e13]: Download CV
+    - paragraph [ref=e14]: Explore now
+    - button "Switch to Russian" [ref=e15] [cursor=pointer]
+    - button "Switch to English" [ref=e16] [cursor=pointer]
+  - generic [ref=e17]:
+    - heading "4. Theme Switcher" [level=2] [ref=e18]
+    - button "Theme 1" [ref=e19] [cursor=pointer]
+    - button "Theme 2" [ref=e20] [cursor=pointer]
+    - button "Theme 3" [ref=e21] [cursor=pointer]
+    - button "Theme 4" [ref=e22] [cursor=pointer]
+    - paragraph [ref=e23]: "Current theme:"
