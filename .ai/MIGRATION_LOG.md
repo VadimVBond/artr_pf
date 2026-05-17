@@ -107,3 +107,25 @@
 | `components/sidebar_ru.html` | Статический RU — заменён i18n системой |
 | `components/navbar_ru.html` | Статический RU — заменён i18n системой |
 | `index.html.old` | Бэкап старого монолита — не нужен |
+
+## ?? Migration Notes (May 2026 Update)
+
+### ??? Modified Templates/Components
+- Integrated data-i18n fully across all extracted components:
+  - \	emplates/layout/navbar.html\
+  - \	emplates/layout/sidebar.html\
+  - \	emplates/sections/pricing.html\
+  - \	emplates/sections/services.html\
+  - \	emplates/sections/counters.html\
+- Migrated hardcoded data mapping keys in \data/navigation.json\ and \data/counters.json\ to reference translation dictionaries.
+
+### ?? Lifecycle Adjustments & Rendering Parity Fixes
+- Added standard Emoji flags to the navigation component language switcher.
+- Synchronized rendering pipeline: i18n.js now strictly executes its translation mapping *only* after ComponentLoader confirms all HTML shards are inserted (via componentsReady event).
+
+### ??? Deprecated Behavior Removed
+- Removed static localized HTML files (e.g. \components/sidebar_ru.html\, \components/navbar_ru.html\). The architecture now operates strictly on a single layout file (\sidebar.html\) populated dynamically.
+- Removed legacy index.html.old and monolithic backups.
+
+### ? Remaining Untranslated Blocks
+- \onepage.html\ remains a monolithic exception for edge-case usage and lacks complete i18n mapping.
