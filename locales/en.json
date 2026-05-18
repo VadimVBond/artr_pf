@@ -8,9 +8,18 @@
   "navigation": {
     "home": "Home",
     "portfolio": "Portfolio",
+    "portfolio2col": "Portfolio 2 col",
+    "portfolio3col": "Portfolio 3 col",
+    "portfolio2colMasonry": "2 col Masonry",
+    "portfolio3colMasonry": "3 col Masonry",
+    "portfolioSingle": "Portfolio single",
+    "portfolioSingle2": "Portfolio single 2",
     "history": "History",
     "contact": "Contact",
     "blog": "Blog",
+    "blog2col": "Blog 2 col",
+    "blog3col": "Blog 3 col",
+    "blogPost": "Blog post",
     "onepage": "Onepage"
   },
   "sidebar": {

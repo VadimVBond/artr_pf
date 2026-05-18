@@ -8,18 +8,22 @@
     <div class="row">
       {{#each items}}
       <div class="col-lg-4 col-md-6">
-        <div class="art-a art-price-card {{#if popular}}art-popular{{/if}}">
-          <h5 class="mb-15">{{title}}</h5>
-          <div class="art-price">{{price}}</div>
-          <div class="mb-15">{{desc}}</div>
-          <ul class="art-price-list">
-            {{#each features}}
-            <li>{{this}}</li>
-            {{/each}}
-          </ul>
-          <a href="contact.html" class="art-btn art-btn-md">
-            <span data-i18n="common.orderNow">Order now</span>
-          </a>
+        <div class="art-a art-price {{#if popular}}art-popular-price{{/if}}">
+          <div class="art-price-body">
+            <h5 class="mb-30">{{title}}</h5>
+            <div class="art-price-cost">
+              <div class="art-number">{{price}}</div>
+            </div>
+            {{#if desc}}<div class="mb-15">{{desc}}</div>{{/if}}
+            <ul class="art-price-list">
+              {{#each features}}
+              <li>{{this}}</li>
+              {{/each}}
+            </ul>
+            <a href="contact.html" class="art-link art-color-link art-w-chevron">
+              <span data-i18n="common.orderNow">Order now</span>
+            </a>
+          </div>
         </div>
       </div>
       {{/each}}

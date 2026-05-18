@@ -8,9 +8,18 @@
   "navigation": {
     "home": "Главная",
     "portfolio": "Портфолио",
+    "portfolio2col": "Портфолио 2 колонки",
+    "portfolio3col": "Портфолио 3 колонки",
+    "portfolio2colMasonry": "2 колонки Masonry",
+    "portfolio3colMasonry": "3 колонки Masonry",
+    "portfolioSingle": "Портфолио single",
+    "portfolioSingle2": "Портфолио single 2",
     "history": "История",
     "contact": "Контакты",
     "blog": "Блог",
+    "blog2col": "Блог 2 колонки",
+    "blog3col": "Блог 3 колонки",
+    "blogPost": "Запись блога",
     "onepage": "Одна страница"
   },
   "sidebar": {
