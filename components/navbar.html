@@ -59,10 +59,13 @@
     <!-- menu end -->
 
     <!-- language change -->
-    <ul class="art-language-change">
-      <li><a href="index_ru.html">RU</a></li>
-      <li class="art-active-lang"><a href="#.">EN</a></li>
-    </ul>
+    <div class="art-language-dropdown art-language-change">
+      <button class="art-language-toggle" aria-expanded="false" aria-label="Change language"><span class="art-language-flag">EN</span></button>
+      <ul class="art-language-list">
+        <li><a href="index_ru.html" data-lang="ru" title="Русский">🇷🇺</a></li>
+        <li class="art-active-lang"><a href="#." data-lang="en" title="English">🇬🇧</a></li>
+      </ul>
+    </div>
     <!-- language change end -->
 
   </div>

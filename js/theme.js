@@ -28,6 +28,15 @@ class ThemeSwitcher {
     link.id = 'current-theme';
     document.head.appendChild(link);
 
+    const themeColors = {
+      'color-1': '#FFC107',
+      'color-2': '#f44336',
+      'color-3': '#4CAF50',
+      'color-4': '#64B5F6'
+    };
+    const primaryColor = themeColors[themeName] || '#FFC107';
+    document.documentElement.style.setProperty('--primary-color', primaryColor);
+
     this.currentTheme = themeName;
     localStorage.setItem('theme', themeName);
     console.log(`✓ Theme applied: ${themeName}`);

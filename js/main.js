@@ -256,22 +256,48 @@ if (typeof Scrollbar !== 'undefined') {
       }
     });
 
-    $('.art-language-change:not(.art-theme-change) a').off().on('click', function(event) {
+    // Language dropdown toggle
+    $('.art-language-change .art-language-toggle').off().on('click', function(e) {
+      e.preventDefault();
+      const $parent = $(this).closest('.art-language-change');
+      $parent.toggleClass('open');
+      $(this).attr('aria-expanded', $parent.hasClass('open'));
+    });
+
+    // Language select
+    $('.art-language-change:not(.art-theme-change) a[data-lang]').off().on('click', function(event) {
       event.preventDefault();
 
       const lang = $(this).data('lang');
       if (!lang || !window.i18n) return;
 
       window.i18n.setLanguage(lang);
-      $('.art-language-change:not(.art-theme-change) li').removeClass('art-active-lang');
+      const $container = $(this).closest('.art-language-change');
+      $container.find('li').removeClass('art-active-lang');
       $(this).parent().addClass('art-active-lang');
+      // update toggle flag to selected
+      const flagHtml = $(this).text();
+      $container.find('.art-language-toggle .art-language-flag').text(flagHtml);
+      $container.removeClass('open');
+      $container.find('.art-language-toggle').attr('aria-expanded', 'false');
     });
 
     if (window.i18n) {
       const currentLang = window.i18n.getLanguage();
       $('.art-language-change:not(.art-theme-change) li').removeClass('art-active-lang');
-      $(`.art-language-change:not(.art-theme-change) a[data-lang="${currentLang}"]`).parent().addClass('art-active-lang');
+      const $found = $(`.art-language-change:not(.art-theme-change) a[data-lang="${currentLang}"]`);
+      $found.parent().addClass('art-active-lang');
+      // set toggle flag to current language
+      const flag = $found.length ? $found.text() : $('.art-language-change a[data-lang="en"]').text();
+      $('.art-language-change .art-language-toggle .art-language-flag').text(flag);
     }
+
+    // close language dropdown on outside click
+    $(document).off('click.languageDropdown').on('click.languageDropdown', function(e) {
+      if ($(e.target).closest('.art-language-change').length === 0) {
+        $('.art-language-change.open').removeClass('open').find('.art-language-toggle').attr('aria-expanded', 'false');
+      }
+    });
 
     $('.art-theme-change a').off().on('click', function(event) {
       event.preventDefault();

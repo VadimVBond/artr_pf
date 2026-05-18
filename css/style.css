@@ -1485,6 +1485,82 @@ menu bar
 .art-menu-bar .art-language-change li:last-child {
   margin-bottom: 0;
 }
+.art-menu-bar .art-language-dropdown {
+  position: absolute;
+  bottom: 30px;
+  left: 26px;
+  z-index: 110;
+}
+.art-menu-bar .art-language-toggle {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-color-light);
+  color: var(--text-color-light);
+  font-weight: 600;
+  border: 1px solid rgba(255,255,255,0.04);
+  -webkit-box-shadow: inset 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+          box-shadow: inset 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+  cursor: pointer;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+.art-menu-bar .art-language-toggle .art-language-flag { font-size: 18px; line-height: 1; color: inherit; }
+.art-menu-bar .art-language-toggle:hover {
+  background: var(--primary-color);
+  color: var(--bg-color-light);
+  box-shadow: 0 0 18px rgba(255, 255, 255, 0.16);
+}
+.art-menu-bar .art-language-toggle:focus { outline: none; }
+.art-menu-bar .art-language-dropdown .art-language-list {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  transform: translateX(-100%);
+}
+.art-menu-bar .art-language-dropdown.open .art-language-list { display: flex; }
+.art-menu-bar .art-language-dropdown .art-language-list li {
+  list-style: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--bg-color-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-box-shadow: inset 0 3px 8px 0 rgba(15, 15, 20, 0.06);
+          box-shadow: inset 0 3px 8px 0 rgba(15, 15, 20, 0.06);
+}
+.art-menu-bar .art-language-dropdown .art-language-list li a { font-size: 18px; display:block; line-height:36px; }
+.art-menu-bar .art-language-dropdown .art-active-lang { background-color: var(--primary-color); }
+.art-menu-bar .art-language-dropdown .art-active-lang a { color: var(--bg-color-light); }
+
+/* Override legacy .art-language-change block for dropdown usage */
+.art-menu-bar .art-language-dropdown.art-language-change {
+  width: auto !important;
+  padding: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Position list to the left of the toggle button reliably */
+.art-menu-bar .art-language-dropdown .art-language-list {
+  left: auto;
+  right: 52px;
+  transform: none;
+}
+
+/* Slightly larger tap target and clearer flag visual */
+.art-menu-bar .art-language-toggle { width:48px; height:48px; }
+.art-menu-bar .art-language-dropdown .art-language-list li { width:40px; height:40px; }
+.art-menu-bar .art-language-dropdown .art-language-list li a { font-size:20px; line-height:40px; }
+
 .art-menu-bar .art-theme-dropdown {
   position: absolute;
   bottom: 140px;
@@ -2352,6 +2428,22 @@ footer a {
 }
 footer a:hover {
   color: var(--text-color-light);
+}
+
+.art-footer-text {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.art-footer-text p {
+  margin: 0;
+}
+.art-footer-text .art-social-frame {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 0;
 }
 
 /* ------------------------------
