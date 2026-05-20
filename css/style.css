@@ -2899,6 +2899,14 @@ content (after 500px)
 
 ------------------------------ */
 @media (max-width: 500px) {
+  .art-banner .art-banner-overlay .art-banner-title h1 {
+    font-size: 32px;
+    line-height: 1.1;
+  }
+  .art-banner .art-banner-overlay {
+    padding: 40px 20px;
+  }
+
   .art-section-title {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
